@@ -1,0 +1,278 @@
+{
+  "metrics": [
+    {
+      "interpretation": "Value range: [0,5], lower is better",
+      "name": "Number of Services Involved in the Compound Service",
+      "description": "Number of services involved in the compound service",
+      "abbreviation": "NSIC",
+      "results": {
+        "book-service": "1.0",
+        "api-gateway": "1.0",
+        "stock-check-service": "1.0",
+        "order-service": "1.0",
+        "message-service": "1.0",
+        "author-service": "1.0"
+      }
+    },
+    {
+      "result": "0.0",
+      "interpretation": "Value range: [0,15], lower is better",
+      "name": "Services Interdependence in the System",
+      "description": "Count of pairs of services which depend on each other",
+      "abbreviation": "SIY"
+    },
+    {
+      "interpretation": "Value range: [0,5], lower is better",
+      "name": "Absolute Importance of the Service",
+      "description": "Number of services which depend on a service",
+      "abbreviation": "AIS",
+      "results": {
+        "book-service": "1.0",
+        "api-gateway": "0.0",
+        "stock-check-service": "1.0",
+        "order-service": "1.0",
+        "message-service": "1.0",
+        "author-service": "1.0"
+      }
+    },
+    {
+      "interpretation": "Value range: [0,5], lower is better",
+      "name": "Absolute Dependence of the Service",
+      "description": "Number of other services a service depends on",
+      "abbreviation": "ADS",
+      "results": {
+        "book-service": "0.0",
+        "api-gateway": "3.0",
+        "stock-check-service": "0.0",
+        "order-service": "2.0",
+        "message-service": "0.0",
+        "author-service": "0.0"
+      }
+    },
+    {
+      "interpretation": "Value range: [0,25], lower is better",
+      "name": "Absolute Criticality of the Service",
+      "description": "Product of its absolute importance (AIS) and absolute dependence (ADS)",
+      "abbreviation": "ACS",
+      "results": {
+        "book-service": "0.0",
+        "api-gateway": "0.0",
+        "stock-check-service": "0.0",
+        "order-service": "2.0",
+        "message-service": "0.0",
+        "author-service": "0.0"
+      }
+    },
+    {
+      "result": "6.0",
+      "interpretation": "Value range: [0,INF), lower is better",
+      "name": "Number of Services",
+      "description": "Number of services in the system",
+      "abbreviation": "NS"
+    },
+    {
+      "interpretation": "Value range: [0,1), lower is better",
+      "name": "Relative Coupling of Service",
+      "description": "Degree to which a service depends on the other services",
+      "abbreviation": "RCS",
+      "results": {
+        "book-service": "0.0",
+        "api-gateway": "0.0",
+        "stock-check-service": "0.0",
+        "order-service": "0.0",
+        "message-service": "0.0",
+        "author-service": "0.0"
+      }
+    },
+    {
+      "interpretation": "Value range: [0,1), lower is better",
+      "name": "Relative Importance of Service",
+      "description": "Degree to which the other services depend on a service",
+      "abbreviation": "RIS",
+      "results": {
+        "book-service": "0.0",
+        "api-gateway": "0.0",
+        "stock-check-service": "0.0",
+        "order-service": "0.0",
+        "message-service": "0.0",
+        "author-service": "0.0"
+      }
+    },
+    {
+      "result": "0.0",
+      "interpretation": "Value range: [0,1], lower is better",
+      "name": "Service Coupling Factor",
+      "description": "Indicates the overall coupling in the system, the sum over all single coupling values is set in relation with the maximum couplings that could occur in the system",
+      "abbreviation": "SCF"
+    },
+    {
+      "interpretation": "Value range: [0,INF), lower is better",
+      "name": "Weighted Service Interface Count",
+      "description": "Weighted number of exposed interfaces or operations per service (all weights \u003d 1.0)",
+      "abbreviation": "WSIC",
+      "results": {
+        "book-service": "8.0",
+        "api-gateway": "4.0",
+        "stock-check-service": "2.0",
+        "order-service": "4.0",
+        "message-service": "2.0",
+        "author-service": "4.0"
+      }
+    },
+    {
+      "result": "0.0",
+      "interpretation": "Value range: [0,1], lower is better",
+      "name": "Service Composition Pattern",
+      "description": "Fraction of services which are composite",
+      "abbreviation": "SCP"
+    },
+    {
+      "result": "0.67",
+      "interpretation": "Value range: (0,1], very low values should be avoided",
+      "name": "Inverse of Average Number of Used Message",
+      "description": "Ratio between number of services and message types",
+      "abbreviation": "IAUM"
+    },
+    {
+      "interpretation": "Value range: (0,1], higher is better",
+      "name": "Service Interface Usage Cohesion",
+      "description": "Quantifies cohesion of a service based on the number of operations invoked by every client",
+      "abbreviation": "SIUC",
+      "results": {
+        "book-service": "0.67",
+        "stock-check-service": "0.5",
+        "order-service": "0.5",
+        "message-service": "0.5",
+        "author-service": "1.0"
+      }
+    },
+    {
+      "interpretation": "Value range: [0,1], higher is better",
+      "name": "Service Interface Data Cohesion",
+      "description": "Quantifies cohesion of a service based on the number of operations sharing the same input parameter types",
+      "abbreviation": "SIDC",
+      "results": {
+        "book-service": "0.67",
+        "stock-check-service": "1.0",
+        "order-service": "1.0",
+        "message-service": "0.67",
+        "author-service": "0"
+      }
+    },
+    {
+      "interpretation": "Value range: [0,INF), lower is better",
+      "name": "Response for Operation",
+      "description": "Cardinality of the set of other service interfaces that can be executed in response to invocations with all possible parameters",
+      "details": [
+        "api-gateway ([http post]): [http post]",
+        "api-gateway ([http get]): [http get]",
+        "api-gateway ([http delete]): [http delete]"
+      ],
+      "abbreviation": "RFO",
+      "results": {
+        "discovery-server": {
+          "[http get]": "0.0",
+          "[http put]": "0.0",
+          "[http delete]": "0.0",
+          "[security filterchain before]": "0.0",
+          "[secured request]": "0.0",
+          "[security filterchain after]": "0.0",
+          "[http post]": "0.0"
+        },
+        "book-service": {
+          "[graphql field create-book]": "0.0",
+          "[graphql -delete-book]": "0.0",
+          "[graphql field get-all-books]": "0.0",
+          "[graphql field delete-book]": "0.0",
+          "[graphql -get-books]": "0.0",
+          "[graphql -create-book]": "0.0",
+          "[http post /api/graphql]": "0.0",
+          "[http get /actuator/prometheus]": "0.0"
+        },
+        "api-gateway": {
+          "[http get]": "1.0",
+          "[http delete]": "1.0",
+          "[http options]": "0.0",
+          "[http post]": "1.0"
+        },
+        "stock-check-service": {
+          "[http get /actuator/prometheus]": "0.0",
+          "[http get /api/stockcheck]": "0.0"
+        },
+        "order-service": {
+          "[stock-check-service-lookup]": "0.0",
+          "[message-topic]": "0.0",
+          "[http get /actuator/prometheus]": "0.0",
+          "[http post /api/order]": "0.0"
+        },
+        "message-service": {
+          "[on-message]": "0.0",
+          "[http get /actuator/prometheus]": "0.0"
+        },
+        "author-service": {
+          "[http get /api/authors]": "0.0",
+          "[http post /api/authors]": "0.0",
+          "[http delete /api/authors/{id}]": "0.0",
+          "[http get /actuator/prometheus]": "0.0"
+        }
+      }
+    },
+    {
+      "result": "2.0",
+      "interpretation": "Value range: [0,INF), lower is better",
+      "name": "Total Response for Service",
+      "description": "Sum of RFO values for all operations",
+      "abbreviation": "TRS"
+    },
+    {
+      "result": "0.83",
+      "interpretation": "Value range: [0,5], lower is better",
+      "name": "Mean Absolute Importance/Dependence in the System",
+      "description": "Mean number of services which depend on a service / Mean number of services a service depends on",
+      "abbreviation": "MAIDS"
+    },
+    {
+      "result": "1.67",
+      "interpretation": "Value range: [0,10], lower is better",
+      "name": "Mean Absolute Coupling in the System",
+      "description": "Mean number of services which depend on a service or a service depends on",
+      "abbreviation": "MACS"
+    },
+    {
+      "interpretation": "Value range: (0,1], higher is better",
+      "name": "Dynamic Relative Dependence of Service",
+      "description": "Degree to which a service uses other services in terms of calls",
+      "abbreviation": "DRDS",
+      "results": {}
+    },
+    {
+      "interpretation": "Value range: (0,1], higher is better",
+      "name": "Dynamic Relative Importance of Service",
+      "description": "Degree to which other services depend on a service in terms of calls",
+      "abbreviation": "DRIS",
+      "results": {}
+    },
+    {
+      "interpretation": "Value range: (0,1], lower is better",
+      "name": "Dynamic Relative Dependence of Service in the System",
+      "description": "Degree to which a service uses other services in terms of calls compared to all calls system-wide",
+      "abbreviation": "DRDSS",
+      "results": {}
+    },
+    {
+      "interpretation": "Value range: (0,1], lower is better",
+      "name": "Dynamic Relative Importance of Service in the System",
+      "description": "Degree to which other services depend on a service in terms of calls compared to all calls system-wide",
+      "abbreviation": "DRISS",
+      "results": {}
+    },
+    {
+      "result": "0.0",
+      "interpretation": "Value range: [0,2344], lower is better",
+      "name": "Cyclic Service Dependencies",
+      "description": "Number of cycles in the dependencies",
+      "details": [],
+      "abbreviation": "CSD"
+    }
+  ]
+}

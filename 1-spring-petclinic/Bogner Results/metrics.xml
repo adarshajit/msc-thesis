@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metrics>
+    <metric>
+        <name>Number of Services Involved in the Compound Service</name>
+        <abbreviation>NSIC</abbreviation>
+        <description>Number of services involved in the compound service</description>
+        <interpretation>Value range: [0,4], lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>1.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>1.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>1.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>1.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Services Interdependence in the System</name>
+        <abbreviation>SIY</abbreviation>
+        <description>Count of pairs of services which depend on each other</description>
+        <interpretation>Value range: [0,6], lower is better</interpretation>
+        <result>0.0</result>
+    </metric>
+    <metric>
+        <name>Absolute Importance of the Service</name>
+        <abbreviation>AIS</abbreviation>
+        <description>Number of services which depend on a service</description>
+        <interpretation>Value range: [0,3], lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>1.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>1.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>1.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Absolute Dependence of the Service</name>
+        <abbreviation>ADS</abbreviation>
+        <description>Number of other services a service depends on</description>
+        <interpretation>Value range: [0,3], lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>0.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Absolute Criticality of the Service</name>
+        <abbreviation>ACS</abbreviation>
+        <description>Product of its absolute importance (AIS) and absolute dependence (ADS)</description>
+        <interpretation>Value range: [0,9], lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>0.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Number of Services</name>
+        <abbreviation>NS</abbreviation>
+        <description>Number of services in the system</description>
+        <interpretation>Value range: [0,INF), lower is better</interpretation>
+        <result>4.0</result>
+    </metric>
+    <metric>
+        <name>Relative Coupling of Service</name>
+        <abbreviation>RCS</abbreviation>
+        <description>Degree to which a service depends on the other services</description>
+        <interpretation>Value range: [0,1), lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>0.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Relative Importance of Service</name>
+        <abbreviation>RIS</abbreviation>
+        <description>Degree to which the other services depend on a service</description>
+        <interpretation>Value range: [0,1), lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>0.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Service Coupling Factor</name>
+        <abbreviation>SCF</abbreviation>
+        <description>Indicates the overall coupling in the system, the sum over all single coupling values is set in relation with the maximum couplings that could occur in the system</description>
+        <interpretation>Value range: [0,1], lower is better</interpretation>
+        <result>0.0</result>
+    </metric>
+    <metric>
+        <name>Weighted Service Interface Count</name>
+        <abbreviation>WSIC</abbreviation>
+        <description>Weighted number of exposed interfaces or operations per service (all weights = 1.0)</description>
+        <interpretation>Value range: [0,INF), lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>7.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>11.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>11.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>5.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Service Composition Pattern</name>
+        <abbreviation>SCP</abbreviation>
+        <description>Fraction of services which are composite</description>
+        <interpretation>Value range: [0,1], lower is better</interpretation>
+        <result>0.0</result>
+    </metric>
+    <metric>
+        <name>Inverse of Average Number of Used Message</name>
+        <abbreviation>IAUM</abbreviation>
+        <description>Ratio between number of services and message types</description>
+        <interpretation>Value range: (0,1], very low values should be avoided</interpretation>
+        <result>0.12</result>
+    </metric>
+    <metric>
+        <name>Service Interface Usage Cohesion</name>
+        <abbreviation>SIUC</abbreviation>
+        <description>Quantifies cohesion of a service based on the number of operations invoked by every client</description>
+        <interpretation>Value range: (0,1], higher is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>0.33</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>1.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>0.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Service Interface Data Cohesion</name>
+        <abbreviation>SIDC</abbreviation>
+        <description>Quantifies cohesion of a service based on the number of operations sharing the same input parameter types</description>
+        <interpretation>Value range: [0,1], higher is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <value>0.0</value>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <value>0.0</value>
+            </result>
+        </results>
+    </metric>
+    <metric>
+        <name>Response for Operation</name>
+        <abbreviation>RFO</abbreviation>
+        <description>Cardinality of the set of other service interfaces that can be executed in response to invocations with all possible parameters</description>
+        <interpretation>Value range: [0,INF), lower is better</interpretation>
+        <results>
+            <result>
+                <name>visits-service</name>
+                <subresult>
+                    <name>[http get /actuator/info]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/health]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /pets/visits]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http post /owners/*/pets/{petid}/visits]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /owners/*/pets/{petid}/visits]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/prometheus]</name>
+                    <value>0.0</value>
+                </subresult>
+            </result>
+            <result>
+                <name>api-gateway</name>
+                <subresult>
+                    <name>[http get]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http put]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/info]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/health]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /webjars/**]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http post /fallback]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /api/gateway/owners/{ownerid}]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/prometheus]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http post]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /]</name>
+                    <value>0.0</value>
+                </subresult>
+            </result>
+            <result>
+                <name>customers-service</name>
+                <subresult>
+                    <name>[http post /owners]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http post /owners/{ownerid}/pets]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /pettypes]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/info]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/health]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /owners/{ownerid}]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /owners]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http put /owners/*/pets/{petid}]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/prometheus]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /owners/*/pets/{petid}]</name>
+                    <value>1.0</value>
+                </subresult>
+            </result>
+            <result>
+                <name>vets-service</name>
+                <subresult>
+                    <name>[http get /actuator/info]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/health]</name>
+                    <value>1.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /actuator/prometheus]</name>
+                    <value>0.0</value>
+                </subresult>
+                <subresult>
+                    <name>[http get /vets]</name>
+                    <value>1.0</value>
+                </subresult>
+            </result>
+        </results>
+        <details>
+            <detail>api-gateway ([http get]): [http get]</detail>
+            <detail>api-gateway ([http post]): [http post]</detail>
+            <detail>api-gateway ([http put]): [http put]</detail>
+            <detail>customers-service ([http get /owners]): [connection]</detail>
+            <detail>customers-service ([http post /owners/{ownerid}/pets]): [connection]</detail>
+            <detail>customers-service ([http get /owners/{ownerid}]): [connection]</detail>
+            <detail>customers-service ([http get /pettypes]): [connection]</detail>
+            <detail>customers-service ([http put /owners/*/pets/{petid}]): [connection]</detail>
+            <detail>customers-service ([http get /owners/*/pets/{petid}]): [connection]</detail>
+            <detail>customers-service ([http post /owners]): [connection]</detail>
+            <detail>customers-service ([http get /actuator/health]): [connection]</detail>
+            <detail>vets-service ([http get /vets]): [connection]</detail>
+            <detail>vets-service ([http get /actuator/health]): [connection]</detail>
+            <detail>visits-service ([http post /owners/*/pets/{petid}/visits]): [connection]</detail>
+            <detail>visits-service ([http get /owners/*/pets/{petid}/visits]): [connection]</detail>
+            <detail>visits-service ([http get /actuator/health]): [connection]</detail>
+            <detail>visits-service ([http get /pets/visits]): [connection]</detail>
+        </details>
+    </metric>
+    <metric>
+        <name>Total Response for Service</name>
+        <abbreviation>TRS</abbreviation>
+        <description>Sum of RFO values for all operations</description>
+        <interpretation>Value range: [0,INF), lower is better</interpretation>
+        <result>17.0</result>
+    </metric>
+    <metric>
+        <name>Mean Absolute Importance/Dependence in the System</name>
+        <abbreviation>MAIDS</abbreviation>
+        <description>Mean number of services which depend on a service / Mean number of services a service depends on</description>
+        <interpretation>Value range: [0,3], lower is better</interpretation>
+        <result>0.75</result>
+    </metric>
+    <metric>
+        <name>Mean Absolute Coupling in the System</name>
+        <abbreviation>MACS</abbreviation>
+        <description>Mean number of services which depend on a service or a service depends on</description>
+        <interpretation>Value range: [0,6], lower is better</interpretation>
+        <result>1.5</result>
+    </metric>
+    <metric>
+        <name>Dynamic Relative Dependence of Service</name>
+        <abbreviation>DRDS</abbreviation>
+        <description>Degree to which a service uses other services in terms of calls</description>
+        <interpretation>Value range: (0,1], higher is better</interpretation>
+        <results/>
+    </metric>
+    <metric>
+        <name>Dynamic Relative Importance of Service</name>
+        <abbreviation>DRIS</abbreviation>
+        <description>Degree to which other services depend on a service in terms of calls</description>
+        <interpretation>Value range: (0,1], higher is better</interpretation>
+        <results/>
+    </metric>
+    <metric>
+        <name>Dynamic Relative Dependence of Service in the System</name>
+        <abbreviation>DRDSS</abbreviation>
+        <description>Degree to which a service uses other services in terms of calls compared to all calls system-wide</description>
+        <interpretation>Value range: (0,1], lower is better</interpretation>
+        <results/>
+    </metric>
+    <metric>
+        <name>Dynamic Relative Importance of Service in the System</name>
+        <abbreviation>DRISS</abbreviation>
+        <description>Degree to which other services depend on a service in terms of calls compared to all calls system-wide</description>
+        <interpretation>Value range: (0,1], lower is better</interpretation>
+        <results/>
+    </metric>
+    <metric>
+        <name>Cyclic Service Dependencies</name>
+        <abbreviation>CSD</abbreviation>
+        <description>Number of cycles in the dependencies</description>
+        <interpretation>Value range: [0,14], lower is better</interpretation>
+        <result>0.0</result>
+        <details/>
+    </metric>
+</metrics>

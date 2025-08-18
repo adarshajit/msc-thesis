@@ -1,0 +1,345 @@
+# Number of Services Involved in the Compound Service (NSIC)
+
+## Description
+Number of services involved in the compound service
+
+## Interpretation
+Value range: [0,5], lower is better
+
+## Results
+
+- payment-service: 1
+- customer-service: 1
+- gateway-service: 1
+- product-service: 1
+- order-service: 1
+
+
+# Services Interdependence in the System (SIY)
+
+## Description
+Count of pairs of services which depend on each other
+
+## Interpretation
+Value range: [0,10], lower is better
+
+## Result
+0
+
+
+# Absolute Importance of the Service (AIS)
+
+## Description
+Number of services which depend on a service
+
+## Interpretation
+Value range: [0,4], lower is better
+
+## Results
+
+- payment-service: 1
+- customer-service: 1
+- gateway-service: 1
+- product-service: 1
+- order-service: 0
+
+
+# Absolute Dependence of the Service (ADS)
+
+## Description
+Number of other services a service depends on
+
+## Interpretation
+Value range: [0,4], lower is better
+
+## Results
+
+- payment-service: 0
+- customer-service: 0
+- gateway-service: 0
+- product-service: 0
+- order-service: 3
+
+
+# Absolute Criticality of the Service (ACS)
+
+## Description
+Product of its absolute importance (AIS) and absolute dependence (ADS)
+
+## Interpretation
+Value range: [0,16], lower is better
+
+## Results
+
+- payment-service: 0
+- customer-service: 0
+- gateway-service: 0
+- product-service: 0
+- order-service: 0
+
+
+# Number of Services (NS)
+
+## Description
+Number of services in the system
+
+## Interpretation
+Value range: [0,INF), lower is better
+
+## Result
+5
+
+
+# Relative Coupling of Service (RCS)
+
+## Description
+Degree to which a service depends on the other services
+
+## Interpretation
+Value range: [0,100), lower is better
+
+## Results (Dynamic)
+
+- payment-service: 25%
+- customer-service: 25%
+- gateway-service: 25%
+- product-service: 25%
+- order-service: 75%
+
+
+# Relative Importance of Service (RIS)
+
+## Description
+Degree to which the other services depend on a service
+
+## Interpretation
+Value range: [0,100), lower is better
+
+## Results (Dynamic)
+
+- payment-service: 25%
+- customer-service: 25%
+- gateway-service: 25%
+- product-service: 25%
+- order-service: 0%
+
+
+# Service Coupling Factor (SCF)
+
+## Description
+Indicates the overall coupling in the system, the sum over all single coupling values is set in relation with the maximum couplings that could occur in the system
+
+## Interpretation
+Value range: [0,1], lower is better
+
+## Result
+0.2
+
+
+# Weighted Service Interface Count (WSIC)
+
+## Description
+Weighted number of exposed interfaces or operations per service (all weights = 1.0)
+
+## Interpretation
+Value range: [0,INF), lower is better
+
+## Results
+
+- payment-service: 1.0
+- customer-service: 4.0
+- gateway-service: 3.0
+- product-service: 4.0
+- order-service: 1.0
+
+
+# Service Composition Pattern (SCP)
+
+## Description
+Fraction of services which are composite
+
+## Interpretation
+Value range: [0,100], lower is better
+
+## Result
+0%
+
+
+# Inverse of Average Number of Used Message (IAUM)
+
+## Description
+Ratio between number of services and message types
+
+## Interpretation
+Value range: (0,1], very low values should be avoided
+
+## Result
+0.38
+
+
+# Service Interface Usage Cohesion (SIUC)
+
+## Description
+Quantifies cohesion of a service based on the number of operations invoked by every client
+
+## Interpretation
+Value range: (0,100], higher is better
+
+## Results
+
+- payment-service: 1
+- customer-service: 0
+- gateway-service: 0
+- product-service: 0
+- order-service: 3
+
+
+# Service Interface Data Cohesion (SIDC)
+
+## Description
+Quantifies cohesion of a service based on the number of operations sharing the same input parameter types
+
+## Interpretation
+Value range: [0,100], higher is better
+
+## Results
+
+- payment-service: 0
+- customer-service: 1
+- gateway-service: 0
+- product-service: 0
+- order-service: 0
+
+
+
+# Response for Operation (RFO)
+
+## Description
+Cardinality of the set of other service interfaces that can be executed in response to invocations with all possible parameters
+
+## Interpretation
+Value range: [0,INF), lower is better
+
+## Results
+
+- payment-service:
+    - \[http post /api/v1/payments\]: 0
+
+- customer-service:
+    - \[http get /api/v1/customers/{customer-id}\]: 0
+    - \[http post /api/v1/customers\]: 0
+    - \[http get /api/v1/customers/exists/{customer-id}\]: 0
+    - \[http get /api/v1/customers\]: 0
+
+- gateway-service:
+    - \[http get\]: 1
+    - \[http post\]: 1
+    - \[http get /\*\*\]: 0
+
+- product-service:
+    - \[http post /api/v1/products\]: 0
+    - \[http post /api/v1/products/purchase\]: 0
+    - \[http get /api/v1/products\]: 0
+    - \[http get /\*\*\]: 0
+
+- order-service:
+    - \[http post /api/v1/orders\]: 0
+
+## Details
+
+- gateway-service (\[http get\]): \[http get\]
+- gateway-service (\[http post\]): \[http post\]
+
+
+# Total Response for Service (TRS)
+
+## Description
+Sum of RFO values for all operations
+
+## Interpretation
+Value range: [0,INF), lower is better
+
+## Result
+2
+
+
+# Mean Absolute Importance/Dependence in the System (MAIDS)
+
+## Description
+Mean number of services which depend on a service / Mean number of services a service depends on
+
+## Interpretation
+Value range: [0,4], lower is better
+
+## Result
+0.7
+
+
+# Mean Absolute Coupling in the System (MACS)
+
+## Description
+Mean number of services which depend on a service or a service depends on
+
+## Interpretation
+Value range: [0,8], lower is better
+
+## Result
+1.4
+
+
+# Dynamic Relative Dependence of Service (DRDS)
+
+## Description
+Degree to which a service uses other services in terms of calls
+
+## Interpretation
+Value range: (0,100], higher is better
+
+## Results
+
+
+# Dynamic Relative Importance of Service (DRIS)
+
+## Description
+Degree to which other services depend on a service in terms of calls
+
+## Interpretation
+Value range: (0,100], higher is better
+
+## Results
+
+
+# Dynamic Relative Dependence of Service in the System (DRDSS)
+
+## Description
+Degree to which a service uses other services in terms of calls compared to all calls system-wide
+
+## Interpretation
+Value range: (0,100], lower is better
+
+## Results
+
+
+# Dynamic Relative Importance of Service in the System (DRISS)
+
+## Description
+Degree to which other services depend on a service in terms of calls compared to all calls system-wide
+
+## Interpretation
+Value range: (0,100], lower is better
+
+## Results
+
+
+# Cyclic Service Dependencies (CSD)
+
+## Description
+Number of cycles in the dependencies
+
+## Interpretation
+Value range: [0,74], lower is better
+
+## Result
+0
+
+## Details

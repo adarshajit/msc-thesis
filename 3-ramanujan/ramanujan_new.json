@@ -1,0 +1,313 @@
+{
+  "name": "ramanujan",
+  "services": [
+    {
+      "id": "api",
+      "name": "api",
+      "nanoentities": []
+    },
+    {
+      "id": "post",
+      "name": "post",
+      "nanoentities": []
+    },
+    {
+      "id": "follow",
+      "name": "follow",
+      "nanoentities": [
+        "follow.followers",
+        "follow.following"
+      ]
+    },
+    {
+      "id": "entry-store",
+      "name": "entry-store",
+      "nanoentities": [
+        "entry.when",
+        "entry.user",
+        "entry.text"
+      ]
+    },
+    {
+      "id": "fanout",
+      "name": "fanout",
+      "nanoentities": []
+    },
+    {
+      "id": "timeline-shard",
+      "name": "timeline-shard",
+      "nanoentities": [
+        "timeline.entrylist"
+      ]
+    },
+    {
+      "id": "reserve",
+      "name": "reserve",
+      "nanoentities": [
+        "reservation.key",
+        "reservation.timestamp"
+      ]
+    },
+    {
+      "id": "entry-cache",
+      "name": "entry-cache",
+      "nanoentities": [
+        "entry.when",
+        "entry.user",
+        "entry.text"
+      ]
+    },
+    {
+      "id": "index",
+      "name": "index",
+      "nanoentities": [
+        "search_document.id",
+        "search_document.text",
+        "search_document.user",
+        "search_document.when"
+      ]
+    },
+    {
+      "id": "search",
+      "name": "search",
+      "nanoentities": []
+    },
+    {
+      "id": "home",
+      "name": "home",
+      "nanoentities": []
+    },
+    {
+      "id": "mine",
+      "name": "mine",
+      "nanoentities": []
+    },
+    {
+      "id": "front",
+      "name": "front",
+      "nanoentities": []
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "api",
+      "serviceB": "post",
+      "sharedEntities": [],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "api",
+      "serviceB": "follow",
+      "sharedEntities": [],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "post",
+      "serviceB": "entry-store",
+      "sharedEntities": [
+        "entry.when",
+        "entry.user",
+        "entry.text"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "post",
+      "serviceB": "fanout",
+      "sharedEntities": [
+        "entry.when",
+        "entry.user",
+        "entry.text"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "post",
+      "serviceB": "index",
+      "sharedEntities": [
+        "entry.when",
+        "entry.user",
+        "entry.text"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "follow",
+      "serviceB": "entry-store",
+      "sharedEntities": [
+        "entry"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "follow",
+      "serviceB": "timeline-shard",
+      "sharedEntities": [
+        "entry"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "follow",
+      "serviceB": "reserve",
+      "sharedEntities": [
+        "reservation.key"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "entry-store",
+      "serviceB": "timeline-shard",
+      "sharedEntities": [
+        "entry"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "fanout",
+      "serviceB": "follow",
+      "sharedEntities": [
+        "follow.followers"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "fanout",
+      "serviceB": "timeline-shard",
+      "sharedEntities": [
+        "entry"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "search",
+      "serviceB": "index",
+      "sharedEntities": [
+        "search_document"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "search",
+      "serviceB": "follow",
+      "sharedEntities": [
+        "follow.following"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "home",
+      "serviceB": "timeline-shard",
+      "sharedEntities": [
+        "timeline.entrylist"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "mine",
+      "serviceB": "entry-cache",
+      "sharedEntities": [
+        "entry"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "front",
+      "serviceB": "api",
+      "sharedEntities": [],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "front",
+      "serviceB": "mine",
+      "sharedEntities": [],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "front",
+      "serviceB": "search",
+      "sharedEntities": [],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "front",
+      "serviceB": "home",
+      "sharedEntities": [],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "entry-cache",
+      "serviceB": "entry-store",
+      "sharedEntities": [
+        "entry"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "timeline-shard",
+      "serviceB": "reserve",
+      "sharedEntities": [
+        "reservation.key"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "timeline-shard",
+      "serviceB": "follow",
+      "sharedEntities": [
+        "follow.following"
+      ],
+      "direction": "OUTGOING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "api": [
+      "ping",
+      "post",
+      "follow"
+    ],
+    "post": [
+      "postEntry"
+    ],
+    "follow": [
+      "followUser",
+      "listFollows"
+    ],
+    "entry-store": [
+      "saveEntry",
+      "listEntries"
+    ],
+    "fanout": [
+      "fanoutEntry"
+    ],
+    "timeline-shard": [
+      "insertIntoTimeline",
+      "listTimeline"
+    ],
+    "reserve": [
+      "createReservation",
+      "readReservation",
+      "removeReservation"
+    ],
+    "entry-cache": [
+      "saveEntry",
+      "listEntries"
+    ],
+    "index": [
+      "insertDocument",
+      "queryIndex"
+    ],
+    "search": [
+      "renderSearchPage"
+    ],
+    "home": [
+      "renderHomePage"
+    ],
+    "mine": [
+      "renderMyPostsPage"
+    ],
+    "front": [
+      "routeHttpRequests"
+    ]
+  }
+}

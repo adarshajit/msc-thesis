@@ -1,0 +1,96 @@
+{
+  "name": "spring-microservices-bookstore-demo",
+  "services": [
+    {
+      "id": "A",
+      "name": "Book Service",
+      "nanoentities": [
+        "Book.id",
+        "Book.name",
+        "Book.description",
+        "Book.price"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Author Service",
+      "nanoentities": [
+        "Author.id",
+        "Author.name",
+        "Author.birthDate"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Order Service",
+      "nanoentities": [
+        "Order.id",
+        "Order.orderNumber",
+        "Order.orderLineItemsList",
+        "OrderLineItems.id",
+        "OrderLineItems.skuCode",
+        "OrderLineItems.price",
+        "OrderLineItems.quantity",
+        "OrderPlacedEvent.orderNumber"
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Stock-Check Service",
+      "nanoentities": [
+        "StockCheck.id",
+        "StockCheck.skuCode",
+        "StockCheck.quantity",
+        "StockCheckResponse.skuCode",
+        "StockCheckResponse.isInStock"
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Message Service",
+      "nanoentities": [
+        "OrderPlacedEvent.orderNumber"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "Order Service",
+      "serviceB": "Stock-Check Service",
+      "sharedEntities": [
+        "StockCheckResponse.skuCode",
+        "StockCheckResponse.isInStock"
+      ],
+      "direction": "INCOMING"
+    },
+    {
+      "serviceA": "Message Service",
+      "serviceB": "Order Service",
+      "sharedEntities": [
+        "OrderPlacedEvent.orderNumber"
+      ],
+      "direction": "INCOMING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "Book Service": [
+      "createBook",
+      "viewBooks",
+      "deleteBook"
+    ],
+    "Author Service": [
+      "createAuthor",
+      "viewAuthors",
+      "deleteAuthor"
+    ],
+    "Order Service": [
+      "placeOrder"
+    ],
+    "Stock-Check Service": [
+      "checkStock"
+    ],
+    "Message Service": [
+      "handleMessage"
+    ]
+  }
+}

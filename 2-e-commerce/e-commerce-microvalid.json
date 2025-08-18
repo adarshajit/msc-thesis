@@ -1,0 +1,241 @@
+{
+  "name": "e_commerce_microservices",
+  "services": [
+    {
+      "id": "order",
+      "name": "order",
+      "nanoentities": [
+        "OrderRequest.id",
+        "OrderRequest.reference",
+        "OrderRequest.amount",
+        "OrderRequest.paymentMethod",
+        "OrderRequest.customerId",
+        "OrderRequest.products",
+        "Order.id",
+        "Order.reference",
+        "Order.totalAmount",
+        "Order.paymentMethod",
+        "Order.customerId",
+        "Order.orderLines",
+        "Order.createdDate",
+        "Order.lastModifiedDate",
+        "OrderLine.id",
+        "OrderLine.order",
+        "OrderLine.productId",
+        "OrderLine.quantity",
+        "OrderLineRequest.id",
+        "OrderLineRequest.orderId",
+        "OrderLineRequest.productId",
+        "OrderLineRequest.quantity",
+        "OrderConfirmation.orderReference",
+        "OrderConfirmation.totalAmount",
+        "OrderConfirmation.paymentMethod",
+        "OrderConfirmation.customer",
+        "OrderConfirmation.products"
+      ]
+    },
+    {
+      "id": "customer",
+      "name": "customer",
+      "nanoentities": [
+        "Customer.id",
+        "Customer.firstname",
+        "Customer.lastname",
+        "Customer.email",
+        "Customer.address",
+        "Address.street",
+        "Address.houseNumber",
+        "Address.zipCode",
+        "CustomerRequest.id",
+        "CustomerRequest.firstname",
+        "CustomerRequest.lastname",
+        "CustomerRequest.email",
+        "CustomerRequest.address"
+      ]
+    },
+    {
+      "id": "product",
+      "name": "product",
+      "nanoentities": [
+        "Product.id",
+        "Product.name",
+        "Product.description",
+        "Product.availableQuantity",
+        "Product.price",
+        "Product.category",
+        "Category.id",
+        "Category.name",
+        "Category.description",
+        "Category.products",
+        "ProductRequest.id",
+        "ProductRequest.name",
+        "ProductRequest.description",
+        "ProductRequest.availableQuantity",
+        "ProductRequest.price",
+        "ProductRequest.categoryId",
+        "ProductPurchaseRequest.productId",
+        "ProductPurchaseRequest.quantity"
+      ]
+    },
+    {
+      "id": "payment",
+      "name": "payment",
+      "nanoentities": [
+        "Payment.id",
+        "Payment.amount",
+        "Payment.paymentMethod",
+        "Payment.orderId",
+        "Payment.createdDate",
+        "Payment.lastModifiedDate",
+        "PaymentRequest.id",
+        "PaymentRequest.amount",
+        "PaymentRequest.paymentMethod",
+        "PaymentRequest.orderId",
+        "PaymentRequest.orderReference",
+        "PaymentRequest.customer"
+      ]
+    },
+    {
+    "id": "notification",
+    "name": "notification",
+    "nanoentities": [
+      "Notification.id",
+      "Notification.type",
+      "Notification.notificationDate",
+      "Notification.orderConfirmation",
+      "Notification.paymentConfirmation"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "order",
+      "serviceB": "customer",
+      "sharedEntities": [
+        "CustomerResponse.id",
+        "CustomerResponse.firstname",
+        "CustomerResponse.lastname",
+        "CustomerResponse.email"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+    "serviceA": "order",
+    "serviceB": "product",
+    "sharedEntities": [
+      "PurchaseRequest.productId",
+      "PurchaseRequest.quantity",
+      "PurchaseResponse.productId",
+      "PurchaseResponse.name",
+      "PurchaseResponse.description",
+      "PurchaseResponse.price",
+      "PurchaseResponse.quantity"
+    ],
+    "direction": "OUTGOING"
+    },
+    {
+    "serviceA": "order",
+    "serviceB": "payment",
+    "sharedEntities": [
+      "PaymentRequest.amount",
+      "PaymentRequest.paymentMethod",
+      "PaymentRequest.orderId",
+      "PaymentRequest.orderReference",
+      "CustomerResponse.id",
+      "CustomerResponse.firstname",
+      "CustomerResponse.lastname",
+      "CustomerResponse.email"
+    ],
+    "direction": "OUTGOING"
+  },
+  {
+  "serviceA": "order",
+  "serviceB": "notification",
+  "sharedEntities": [
+    "OrderConfirmation.orderReference",
+    "OrderConfirmation.totalAmount",
+    "OrderConfirmation.paymentMethod",
+    "Customer.id",
+    "Customer.firstname",
+    "Customer.lastname",
+    "Customer.email",
+    "Product.productId",
+    "Product.name",
+    "Product.description",
+    "Product.price",
+    "Product.quantity"
+  ],
+  "direction": "OUTGOING"
+},
+{
+  "serviceA": "payment",
+  "serviceB": "notification",
+  "sharedEntities": [
+    "PaymentNotificationRequest.orderReference",
+    "PaymentNotificationRequest.amount",
+    "PaymentNotificationRequest.paymentMethod",
+    "PaymentNotificationRequest.customerFirstname",
+    "PaymentNotificationRequest.customerLastname",
+    "PaymentNotificationRequest.customerEmail"
+  ],
+  "direction": "OUTGOING"
+},
+{
+  "serviceA": "notification",
+  "serviceB": "payment",
+  "sharedEntities": [
+    "PaymentConfirmation.orderReference",
+    "PaymentConfirmation.amount",
+    "PaymentConfirmation.paymentMethod",
+    "PaymentConfirmation.customerFirstname",
+    "PaymentConfirmation.customerLastname",
+    "PaymentConfirmation.customerEmail"
+  ],
+  "direction": "INCOMING"
+},
+{
+  "serviceA": "notification",
+  "serviceB": "order",
+  "sharedEntities": [
+    "OrderConfirmation.orderReference",
+    "OrderConfirmation.totalAmount",
+    "OrderConfirmation.paymentMethod",
+    "Customer.id",
+    "Customer.firstname",
+    "Customer.lastname",
+    "Customer.email",
+    "Product.productId",
+    "Product.name",
+    "Product.description",
+    "Product.price",
+    "Product.quantity"
+  ],
+  "direction": "INCOMING"
+}
+  ],
+  "useCaseResponsibility": {
+    "order": [
+      "createOrder",
+      "findAllOrders",
+      "findById"
+    ],
+    "payment": [
+      "createPayment"
+    ],
+    "customer": [
+      "createCustomer",
+      "updateCustomer",
+      "findAllCustomers",
+      "mergeCustomer",
+      "findById",
+      "existsById",
+      "deleteCustomer"
+    ], 
+    "product": [
+      "createProduct",
+      "findById",
+      "findAll",
+      "purchaseProducts"
+    ]
+  }
+}

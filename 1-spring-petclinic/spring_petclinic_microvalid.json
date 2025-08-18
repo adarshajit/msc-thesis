@@ -1,0 +1,103 @@
+{
+  "name": "spring_petclinic_microservices",
+  "services": [
+    {
+      "id": "customers-service",
+      "name": "customers-service",
+      "nanoentities": [
+        "Owner.id",
+        "Owner.firstName",
+        "Owner.lastName",
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone",
+        "Owner.pets",
+        "Pet.id",
+        "Pet.name",
+        "Pet.birthDate",
+        "Pet.type",
+        "PetType.id",
+        "PetType.name"
+      ]
+    },
+    {
+      "id": "vets-service",
+      "name": "vets-service",
+      "nanoentities": [
+        "Vet.id",
+        "Vet.firstName",
+        "Vet.lastName",
+        "Vet.specialties",
+        "Specialty.id",
+        "Specialty.name"
+      ]
+    },
+    {
+      "id": "visits-service",
+      "name": "visits-service",
+      "nanoentities": [
+        "Visit.id",
+        "Visit.date",
+        "Visit.description",
+        "Visit.petId"
+      ]
+    },
+    {
+      "id": "api-gateway",
+      "name": "api-gateway",
+      "nanoentities": []
+    }
+  ],
+  "relations": [
+    {
+      "serviceA": "api-gateway",
+      "serviceB": "customers-service",
+      "sharedEntities": [
+        "Owner.id",
+        "Owner.firstName",
+        "Owner.lastName",
+        "Owner.address",
+        "Owner.city",
+        "Owner.telephone",
+        "Pet.id",
+        "Pet.name",
+        "Pet.birthDate",
+        "Pet.type"
+      ],
+      "direction": "OUTGOING"
+    },
+    {
+      "serviceA": "api-gateway",
+      "serviceB": "visits-service",
+      "sharedEntities": [
+        "Visit.id",
+        "Visit.petId",
+        "Visit.date",
+        "Visit.description"
+      ],
+      "direction": "OUTGOING"
+    }
+  ],
+  "useCaseResponsibility": {
+    "customers-service": [
+      "createOwner",
+      "findOwner",
+      "findAll",
+      "updateOwner",
+      "getPetTypes",
+      "processCreationForm",
+      "processUpdateForm",
+      "findPet"
+    ],
+    "vets-service": [
+      "showResourcesVetList"
+    ],
+    "visits-service": [
+      "create",
+      "read"
+    ],
+    "api-gateway": [
+      "getOwnerDetails"
+    ]
+  }
+}
