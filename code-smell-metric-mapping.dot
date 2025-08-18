@@ -1,0 +1,461 @@
+graph CodeSmellsMetrics {
+  layout = neato;
+  overlap = false;
+  splines = true;
+  sep = "+20";
+  nodesep = 20;
+  ranksep = 2;
+  
+  // Default node settings
+  node [fontsize = 20; style = filled;];
+  
+  // ==== CODE SMELLS: Circles, Light Yellow ====
+  SF1 [label = "Duplicated Code";shape = circle;fillcolor = "#ffefcc";];
+  SF2 [label = "Long Method";shape = circle;fillcolor = "#ffefcc";];
+  SF3 [label = "Large Class";shape = circle;fillcolor = "#ffefcc";];
+  SF4 [label = "Long Parameter List";shape = circle;fillcolor = "#ffefcc";];
+  SF5 [label = "Divergent Change";shape = circle;fillcolor = "#ffefcc";];
+  SF6 [label = "Shotgun Surgery";shape = circle;fillcolor = "#ffefcc";];
+  SF9 [label = "Primitive Obsession";shape = circle;fillcolor = "#ffefcc";];
+  SF10 [label = "Switch Statements";shape = circle;fillcolor = "#ffefcc";];
+  SF11 [label = "Parallel Inheritance";shape = circle;fillcolor = "#ffefcc";];
+  SF12 [label = "Lazy Class";shape = circle;fillcolor = "#ffefcc";];
+  SF13 [label = "Speculative Generality";shape = circle;fillcolor = "#ffefcc";];
+  SF15 [label = "Message Chains";shape = circle;fillcolor = "#ffefcc";];
+  SF16 [label = "Middle Man";shape = circle;fillcolor = "#ffefcc";];
+  SF17 [label = "Inappropriate Intimacy";shape = circle;fillcolor = "#ffefcc";];
+  SF18 [label = "Alt. Classes - Diff Interfaces";shape = circle;fillcolor = "#ffefcc";];
+  SF20 [label = "Data Class";shape = circle;fillcolor = "#ffefcc";];
+  SF21 [label = "Intensive Coupling";shape = circle;fillcolor = "#ffefcc";];
+  SJ1 [label = "Dispersive Coupling";shape = circle;fillcolor = "#ffefcc";];
+  SJ2 [label = "Too Many Arguments";shape = circle;fillcolor = "#ffefcc";];
+  SGS1 [label = "Ignoring Low Memory Warning";shape = circle;fillcolor = "#ffefcc";];
+  SGS2 [label = "Massive View Controller";shape = circle;fillcolor = "#ffefcc";];
+  SGS3 [label = "Swiss Army Knife";shape = circle;fillcolor = "#ffefcc";];
+  SGS4 [label = "Unstable Dependencies";shape = circle;fillcolor = "#ffefcc";];
+  SGS5 [label = "SAP Breaker";shape = circle;fillcolor = "#ffefcc";];
+  SGS7 [label = "Brain Method";shape = circle;fillcolor = "#ffefcc";];
+  SGS9 [label = "God Class";shape = circle;fillcolor = "#ffefcc";];
+  SGS10 [label = "Missing Template Method";shape = circle;fillcolor = "#ffefcc";];
+  SGS11 [label = "Comments";shape = circle;fillcolor = "#ffefcc";];
+  SGS12 [label = "Distorted Hierarchy";shape = circle;fillcolor = "#ffefcc";];
+  SGS13 [label = "Tradition Breaker";shape = circle;fillcolor = "#ffefcc";];
+  SF22 [label = "Temporary Field";shape = circle;fillcolor = "#ffefcc";];
+  SF8 [label = "Refused Bequest";shape = circle;fillcolor = "#ffefcc";];
+  SF23 [label = "Data Clumps";shape = circle;fillcolor = "#ffefcc";];
+  SF24 [label = "Feature Envy";shape = circle;fillcolor = "#ffefcc";];
+  
+  // ==== NEW CODE SMELLS ====
+  MSA11 [label = "Poor API Gateway";shape = circle;fillcolor = "#ffefcc";];
+  MSA12 [label = "Overloaded Endpoint";shape = circle;fillcolor = "#ffefcc";];
+  MSA13 [label = "Fat Service (Megastore)";shape = circle;fillcolor = "#ffefcc";];
+  SGS15 [label = "Leaky Abstraction";shape = circle;fillcolor = "#ffefcc";];
+  MSA14 [label = "Endpoint Proliferation";shape = circle;fillcolor = "#ffefcc";];
+  MSA15 [label = "Cyclic Dependency";shape = circle;fillcolor = "#ffefcc";];
+  
+  // ==== BASE METRICS ====
+  CC [label = "Cyclomatic Complexity";fillcolor = "white";shape = box;];
+  Params [label = "Number of Parameters";fillcolor = "white";shape = box;];
+  LoC [label = "Lines of Code";fillcolor = "white";shape = box;];
+  FanOut [label = "Fan-Out";fillcolor = "white";shape = box;];
+  DIT [label = "Depth of Inheritance Tree";fillcolor = "white";shape = box;];
+  CBO [label = "Coupling Between Objects";fillcolor = "#d5f5e3";shape = box;];
+  LCOM [label = "Lack of Cohesion";fillcolor = "#f9d5ec";shape = box;];
+  Foreign [label = "Access to Foreign Data";fillcolor = "white";shape = box;];
+  // Calls [label = "Method Calls";fillcolor = "white";shape = box;];
+  Interfaces [label = "Number of Interfaces";fillcolor = "white";shape = box;];
+  RFC [label = "Response For Class";fillcolor = "white";shape = box;];
+  Instab [label = "Instability";fillcolor = "white";shape = box;];
+  ChgFreq [label = "Change Frequency";fillcolor = "white";shape = box;];
+  AffCoupl [label = "Afferent Coupling";fillcolor = "#d5f5e3";shape = box;];
+  TightCoupl [label = "Tight Class Coupling";fillcolor = "#d5f5e3";shape = box;];
+  Deps [label = "Number of Dependencies";fillcolor = "white";shape = box;];
+  MIF [label = "Method Inheritance Factor";fillcolor = "white";shape = box;];
+  ClassCoupl [label = "Class Coupling";fillcolor = "#d5f5e3";shape = box;];
+  WMC [label = "WMC";fillcolor = "white";shape = box;];
+  // NOC [label = "NOC";fillcolor = "white";shape = box;];
+  SIX [label = "Specialization Index (SIX)";fillcolor = "white";shape = box;];
+  
+  // ==== MICROSERVICE-SPECIFIC METRICS ====
+  SGM [label = "Service Granularity Metric (SGM)";shape = box;fillcolor = "white";];
+  DGS [label = "Data Granularity of Service (DGS)";shape = box;fillcolor = "white";];
+  FGS [label = "Functional Granularity of Service (FGS)";shape = box;fillcolor = "#f9d5ec";];
+  NOO [label = "Number of Operations (NOO)";shape = box;fillcolor = "white";];
+  
+  // ==== ADVANCED COUPLING METRICS (LIGHT PINK/GREEN) ====
+  SIY [label = "Service Interdependence (SIY)";shape = box;fillcolor = "#d5f5e3";];
+  // Changed to light green
+  AIS [label = "Absolute Importance (AIS)";shape = box;fillcolor = "#d5f5e3";];
+  ADS [label = "Absolute Dependence (ADS)";shape = box;fillcolor = "#d5f5e3";];
+  // Changed to light green
+  ACS [label = "Absolute Criticality (ACS)";shape = box;fillcolor = "#d5f5e3";];
+  
+  // ==== ADVANCED COHESION METRICS (LIGHT PINK/GREEN) ====
+  SIDC [label = "Service Interface Data Cohesion (SIDC)";shape = box;fillcolor = "#f9d5ec";];
+  // Changed to light green
+  SIUC [label = "Service Interface Usage Cohesion (SIUC)";shape = box;fillcolor = "#f9d5ec";];
+  // Changed to light green
+  TSIC [label = "Total Service Interface Cohesion (TSIC)";shape = box;fillcolor = "#f9d5ec";];
+  
+  // ==== TEMPORARY FIELD METRICS ====
+  NFM [label = "Number of Fields per Method (NFM)";shape = box;fillcolor = "white";];
+  NMN [label = "Number of Methods needing a Field (NMN)";shape = box;fillcolor = "white";];
+  NCF [label = "Number of Computations of Field (NCF)";shape = box;fillcolor = "white";];
+  
+  // ==== NEW METRICS FROM YOUR TABLE (VARIOUS COLORS) ====
+  NSIC [label = "NSIC (Num Services Involved in Compound Service)";shape = box;fillcolor = "white";];
+  NS [label = "NS (Number of Services)";shape = box;fillcolor = "white";];
+  RCS [label = "RCS (Relative Coupling of Service)";shape = box;fillcolor = "#d5f5e3";];
+  // Changed to light green
+  RIS [label = "RIS (Relative Importance of Service)";shape = box;fillcolor = "#d5f5e3";];
+  SCF [label = "SCF (Service Coupling Factor)";shape = box;fillcolor = "#d5f5e3";];
+  // Changed to light green
+  WSIC [label = "WSIC (Weighted Service Interface Count)";shape = box;fillcolor = "white";];
+  SCP [label = "SCP (Service Composition Pattern)";shape = box;fillcolor = "white";];
+  IAUM [label = "IAUM (Inverse of Avg Num Used Message)";shape = box;fillcolor = "#f9d5ec";];
+  RFO [label = "RFO (Response for Operation)";shape = box;fillcolor = "white";];
+  TRS [label = "TRS (Total Response for Service)";shape = box;fillcolor = "white";];
+  MAIDS [label = "MAIDS (Mean Absolute Importance/Dependence)";shape = box;fillcolor = "#d5f5e3";];
+  MACS [label = "MACS (Mean Absolute Coupling)";shape = box;fillcolor = "#d5f5e3";];
+  // Changed to light green
+  DRDS [label = "DRDS (Dynamic Relative Dependence of Service)";shape = box;fillcolor = "#d5f5e3";];
+  // Changed to light green
+  DRIS [label = "DRIS (Dynamic Relative Importance of Service)";shape = box;fillcolor = "#d5f5e3";];
+  DRDSS [label = "DRDSS (Dynamic Relative Dependence of Service in System)";shape = box;fillcolor = "#d5f5e3";];
+  // Changed to light green
+  DRISS [label = "DRISS (Dynamic Relative Importance of Service in System)";shape = box;fillcolor = "#d5f5e3";];
+  NOM [label = "NOM (Number of Methods)";shape = box;fillcolor = "white";];
+  // CSD [label = "CSD (Cyclic Service Dependencies)";shape = box;fillcolor = "#d5f5e3";];
+  NOF [label = "NOF (Number of Fields)";shape = box;fillcolor = "white";];
+  
+  TCC [label = "Tight Class Cohesion (TCC)";shape = box;fillcolor = "white";];
+  ATFD [label = "Access to Foreign Data (ATFD)";shape = box;fillcolor = "#f9d5ec";];
+  // Changed to light green
+  
+  
+  // ==== CONNECTIONS ====
+  SF1 -- LoC;
+  
+  SF2 -- LoC;
+  SF2 -- CC;
+  
+  SF3 -- LoC;
+  SF3 -- DIT;
+  SF3 -- CBO;
+  SF3 -- LCOM;
+  SF3 -- WMC;
+  SF3 -- NOM;
+  SF3 -- NOF;
+  
+  SF4 -- Params;
+  
+  SF5 -- ChgFreq;
+  SF5 -- SIDC;
+  
+  SF6 -- ChgFreq;
+  SF6 -- AffCoupl;
+  
+  SF9 -- Params;
+  SF9 -- LCOM;
+  
+  SF10 -- FanOut;
+  SF10 -- CC;
+  
+  SF11 -- LoC;
+  SF11 -- ClassCoupl;
+  SF11 -- CBO;
+  
+  SF12 -- LoC;
+  SF12 -- AffCoupl;
+  SF12 -- DIT;
+  SF12 -- CBO;
+  
+  SF13 -- LoC;
+  
+  SF15 -- AffCoupl;
+  
+  SF16 -- NOM;
+  SF16 -- CC;
+  
+  SF17 -- CBO;
+  SF17 -- RFC;
+  SF17 -- TightCoupl;
+  
+  SF18 -- Params;
+  
+  SF20 -- LCOM;
+  SF20 -- WMC;
+  SF20 -- NOF;
+  SF20 -- NSIC;
+  SF20 -- DIT;
+  
+  SF21 -- WMC;
+  SF21 -- LoC;
+  SF21 -- DIT;
+  SF21 -- TightCoupl;
+  SF21 -- Deps;
+  SF21 -- ClassCoupl;
+  
+  SF23 -- Params;
+  SF23 -- LCOM;
+  
+  SJ1 -- CC;
+  SJ1 -- RFC;
+  SJ1 -- Instab;
+  SJ2 -- CC;
+  SJ2 -- RFC;
+  SJ2 -- Instab;
+  SGS1 -- Params;
+  SGS2 -- LoC;
+  SGS2 -- Params;
+  SGS2 -- LoC;
+  SGS3 -- Interfaces;
+  SGS3 -- LoC;
+  SGS3 -- SIUC;
+  SGS4 -- RFC;
+  
+  SGS4 -- Instab;
+  
+  SGS5 -- CBO;
+  SGS5 -- Instab;
+  
+  SGS7 -- LoC;
+  SGS7 -- CC;
+  SGS7 -- FanOut;
+  SGS7 -- LCOM;
+  
+  SGS9 -- Params;
+  SGS9 -- LoC;
+  SGS9 -- TSIC;
+  SGS9 -- ATFD;
+  SGS9 -- TCC;
+  MSA13 -- TSIC;
+  
+  SGS10 -- CBO;
+  SGS10 -- RFC;
+  SGS11 -- LoC;
+  SGS12 -- CBO;
+  SGS13 -- Params;
+  SGS13 -- LoC;
+  SGS13 -- TightCoupl;
+  SGS13 -- Deps;
+  SGS13 -- SIX;
+  
+  SF13 -- LoC;
+  SF13 -- MIF;
+  
+  SF24 -- CBO;
+  SF24 -- LCOM;
+  SF24 -- Foreign;
+  
+  // COH1 -- LCOM;
+  // COH1 -- FGS;
+  // COH1 -- SIDC;
+  // COH1 -- SIUC;
+  // COH1 -- TSIC;
+  // COH1 -- SIY;
+  
+  MSA11 -- FanOut;
+  MSA11 -- RFC;
+  MSA11 -- CBO;
+  
+  MSA12 -- LoC;
+  MSA12 -- CC;
+  MSA12 -- Params;
+  MSA12 -- DGS;
+  MSA12 -- NOO;
+  MSA12 -- ADS;
+  
+  MSA13 -- WMC;
+  MSA13 -- LoC;
+  MSA13 -- CBO;
+  MSA13 -- ClassCoupl;
+  MSA13 -- SGM;
+  MSA13 -- FGS;
+  MSA13 -- DGS;
+  MSA13 -- NOO;
+  MSA13 -- AIS;
+  MSA13 -- ADS;
+  MSA13 -- ACS;
+  
+  SGS15 -- CBO;
+  SGS15 -- Foreign;
+  SGS15 -- RFC;
+  
+  MSA14 -- Interfaces;
+  MSA14 -- FanOut;
+  MSA14 -- RFC;
+  MSA14 -- NOO;
+  MSA14 -- SIUC;
+  
+  MSA15 -- SIY;
+  
+  // ==== TEMPORARY FIELD CONNECTIONS ====
+  SF22 -- NFM;
+  SF22 -- NMN;
+  SF22 -- NCF;
+  SF22 -- TightCoupl;
+  
+  SGS13 -- MIF;
+  // Tradition Breaker
+  SF13 -- MIF;
+  // Speculative Generality
+  SGS9 -- MIF;
+  
+  SF12 -- LoC;
+  SF12 -- NOM;
+  SF12 -- AffCoupl;
+  SF12 -- WMC;
+  SF12 -- SIX;
+  
+  SGS9 -- NFM;
+  SGS9 -- AIS;
+  
+  // God Class
+  SF13 -- NMN;
+  // Speculative Generality
+  SGS13 -- NMN;
+  // Tradition Breaker
+  SGS7 -- NCF;
+  // Brain Method
+  SF12 -- NCF;
+  
+  // ==== NEW METRICS TO CODE SMELLS CONNECTIONS ====
+  // NSIC
+  NSIC -- SGS9;
+  // God Service
+  NSIC -- MSA13;
+  // Overly Complex Service Composition (assuming Fat Service/Megastore relates to this)
+  
+  // SIY (Already exists as a "Advanced Coupling Metric" and connected to COH1)
+  // No new connections needed based on "Cyclic Dependencies, Tight Coupling" as these are covered by CSD and existing coupling metrics
+  
+  // AIS (Already exists as an "Advanced Coupling Metric" and connected to MSA13)
+  // Connecting to God Class and MSA13 (Fat Service/Megastore) as "God Service" and "Bottleneck Service"
+  AIS -- SGS9;
+  AIS -- MSA13;
+  
+  // ADS (Already exists as an "Advanced Coupling Metric" and connected to MSA12, MSA13)
+  // Connecting to existing "High Coupling" related smells
+  ADS -- SF21;
+  // Intensive Coupling
+  ADS -- TightCoupl;
+  // Direct metric for high coupling, but ADS is a symptom
+  ADS -- CBO;
+  // General coupling
+  ADS -- AffCoupl;
+  // General coupling
+  
+  // ACS (Already exists as an "Advanced Coupling Metric" and connected to MSA13)
+  // Connecting to God Class
+  ACS -- SGS9;
+  
+  // NS
+  // This is more about system size, so connecting to 'Overly Large System' (if you had a node for that)
+  // Or perhaps to overall system complexity, which might be hinted by things like Endpoint Proliferation (MSA14)
+  NS -- MSA14;
+  // Microservice Proliferation (Endpoint Proliferation is a symptom)
+  
+  // RCS
+  RCS -- SF21;
+  // High Coupling (Intensive Coupling)
+  RCS -- TightCoupl;
+  RCS -- CBO;
+  RCS -- AffCoupl;
+  
+  // RIS
+  RIS -- SGS9;
+  // God Service
+  RIS -- MSA13;
+  // Bottleneck Service (Fat Service/Megastore)
+  
+  // SCF
+  SCF -- SF21;
+  // High System Coupling (Intensive Coupling)
+  SCF -- TightCoupl;
+  SCF -- CBO;
+  SCF -- AffCoupl;
+  
+  // WSIC
+  WSIC -- MSA14;
+  // Interface Bloat (Endpoint Proliferation)
+  WSIC -- SGS3;
+  // God Interface (Swiss Army Knife)
+  
+  SGS9 -- SCP;
+  // Overuse of Composite Services, Service Chaining - this could link to how services are structured
+  // It's a bit abstract without specific "composite service" smell nodes.
+  // For now, no direct link as there isn't a specific code smell node for "Overuse of Composite Services".
+  
+  // IAUM
+  
+  IAUM -- SF15;
+  // Chatty Services (Message Chains) - this is a good direct link
+  IAUM -- MSA14;
+  // Inefficient Communication (can lead to Endpoint Proliferation if trying to avoid chatty)
+  
+  // SIUC (Already exists as an "Advanced Cohesion Metric" and connected to COH1, MSA14)
+  // Interface Bloat, Low Cohesion - these are well covered by WSIC and COH1
+  
+  // SIDC (Already exists as an "Advanced Cohesion Metric" and connected to COH1)
+  // Low Cohesion, Interface Bloat - these are well covered by WSIC and COH1
+  
+  // RFO
+  
+  // Overly Complex Operations (Long Method)
+  RFO -- SGS7;
+  // God Operation (Brain Method)
+  
+  // TRS
+  TRS -- SGS9;
+  // God Service
+  TRS -- MSA13;
+  // Overly Complex Service (Fat Service/Megastore)
+  
+  // MAIDS
+  MAIDS -- SGS9;
+  // God Service
+  MAIDS -- MSA13;
+  // Bottleneck (Fat Service/Megastore)
+  MAIDS -- SF21;
+  // // High Coupling (Intensive Coupling)
+  // MAIDS -- TightCoupl;
+  // MAIDS -- CBO;
+  
+  // MACS
+  MACS -- SF21;
+  // High System Coupling (Intensive Coupling)
+  // MACS -- TightCoupl;
+  // MACS -- CBO;
+  
+  // DRDS
+  DRDS -- SF21;
+  // Runtime High Coupling (Intensive Coupling)
+  // DRDS -- TightCoupl;
+  // DRDS -- CBO;
+  
+  // DRIS
+  DRIS -- SGS9;
+  // Runtime Bottleneck (God Service)
+  DRIS -- MSA13;
+  // Bottleneck (Fat Service/Megastore)
+  
+  // DRDSS
+  DRDSS -- SF21;
+  // Runtime High Coupling at System Level (Intensive Coupling)
+  // DRDSS -- TightCoupl;
+  // DRDSS -- CBO;
+  
+  // DRISS
+  DRISS -- SGS9;
+  // Runtime Bottleneck at System Level (God Service)
+  DRISS -- MSA13;
+  // Bottleneck (Fat Service/Megastore)
+  
+  // CSD
+  // Directly from your table
+  //   CSD -- ClassCoupl;
+  // Architecture Erosion implies broken dependency structures
+  //   CSD -- CBO;
+  SF8 -- SIX;
+}

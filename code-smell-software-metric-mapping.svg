@@ -1,0 +1,1435 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8318pt" height="7574pt" viewBox="0.00 0.00 8318.28 7573.68">
+<g id="graph0" class="graph" transform="translate(662.3805821945834,6992.542790815349) scale(0.8645372363084103)" data-name="CodeSmellsMetrics">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-7569.68 8314.28,-7569.68 8314.28,4 -4,4" style=""/>
+<!-- SF1 -->
+<g id="node1" class="node" pointer-events="visible" data-name="SF1">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4231.75" cy="-2006.06" rx="106.99" ry="106.99" style=""/>
+<text text-anchor="middle" x="4231.75" y="-2000.06" font-family="Times,serif" font-size="20.00" style="">Duplicated Code</text>
+</g>
+<!-- LoC -->
+<g id="node43" class="node" pointer-events="visible" data-name="LoC">
+
+<polygon fill="white" stroke="black" points="4102.08,-3937.45 3972.45,-3937.45 3972.45,-3901.45 4102.08,-3901.45 4102.08,-3937.45" style=""/>
+<text text-anchor="middle" x="4037.26" y="-3913.45" font-family="Times,serif" font-size="20.00" style="">Lines of Code</text>
+</g>
+<!-- SF1&#45;&#45;LoC -->
+<g id="edge1" class="edge" data-name="SF1--LoC">
+
+<path fill="none" stroke="black" d="M4216.02,-2112.28C4180.91,-2353.84 4095.99,-2963.16 4054.99,-3475.87 4041.81,-3640.66 4038.27,-3840.72 4037.47,-3901.25" style=""/>
+</g>
+<!-- SF2 -->
+<g id="node2" class="node" pointer-events="visible" data-name="SF2">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4275.16" cy="-4901.31" rx="88.89" ry="88.89" style=""/>
+<text text-anchor="middle" x="4275.16" y="-4895.31" font-family="Times,serif" font-size="20.00" style="">Long Method</text>
+</g>
+<!-- CC -->
+<g id="node41" class="node" pointer-events="visible" data-name="CC">
+
+<polygon fill="white" stroke="black" points="5175.04,-5313.75 4967.76,-5313.75 4967.76,-5277.75 5175.04,-5277.75 5175.04,-5313.75" style=""/>
+<text text-anchor="middle" x="5071.4" y="-5289.75" font-family="Times,serif" font-size="20.00" style="">Cyclomatic Complexity</text>
+</g>
+<!-- SF2&#45;&#45;CC -->
+<g id="edge3" class="edge" data-name="SF2--CC">
+
+<path fill="none" stroke="black" d="M4355.15,-4940.94C4524.33,-5024.75 4912.85,-5217.21 5034.37,-5277.41" style=""/>
+</g>
+<!-- SF2&#45;&#45;LoC -->
+<g id="edge2" class="edge" data-name="SF2--LoC">
+
+<path fill="none" stroke="black" d="M4254.15,-4814.61C4201.81,-4598.56 4067.89,-4045.86 4041.73,-3937.89" style=""/>
+</g>
+<!-- SF3 -->
+<g id="node3" class="node" pointer-events="visible" data-name="SF3">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4749.32" cy="-3494.63" rx="78.44" ry="78.44" style=""/>
+<text text-anchor="middle" x="4749.32" y="-3488.63" font-family="Times,serif" font-size="20.00" style="">Large Class</text>
+</g>
+<!-- SF3&#45;&#45;LoC -->
+<g id="edge4" class="edge" data-name="SF3--LoC">
+
+<path fill="none" stroke="black" d="M4671.87,-3509C4580.23,-3528.67 4425.85,-3570.39 4312.72,-3645.36 4196.87,-3722.13 4089.1,-3852.83 4051.43,-3900.95" style=""/>
+</g>
+<!-- DIT -->
+<g id="node45" class="node" pointer-events="visible" data-name="DIT">
+
+<polygon fill="white" stroke="black" points="4950.18,-2045.7 4726.96,-2045.7 4726.96,-2009.7 4950.18,-2009.7 4950.18,-2045.7" style=""/>
+<text text-anchor="middle" x="4838.57" y="-2021.7" font-family="Times,serif" font-size="20.00" style="">Depth of Inheritance Tree</text>
+</g>
+<!-- SF3&#45;&#45;DIT -->
+<g id="edge5" class="edge" data-name="SF3--DIT">
+
+<path fill="none" stroke="black" d="M4754.11,-3416.02C4771.19,-3135.16 4828.68,-2190.31 4837.45,-2046.2" style=""/>
+</g>
+<!-- CBO -->
+<g id="node46" class="node" pointer-events="visible" data-name="CBO">
+
+<polygon fill="#d5f5e3" stroke="black" points="4865.57,-3972.61 4634.53,-3972.61 4634.53,-3936.61 4865.57,-3936.61 4865.57,-3972.61" style=""/>
+<text text-anchor="middle" x="4750.05" y="-3948.61" font-family="Times,serif" font-size="20.00" style="">Coupling Between Objects</text>
+</g>
+<!-- SF3&#45;&#45;CBO -->
+<g id="edge6" class="edge" data-name="SF3--CBO">
+
+<path fill="none" stroke="black" d="M4749.45,-3573.44C4749.62,-3683.58 4749.93,-3876.75 4750.02,-3936.49" style=""/>
+</g>
+<!-- LCOM -->
+<g id="node47" class="node" pointer-events="visible" data-name="LCOM">
+
+<polygon fill="#f9d5ec" stroke="black" points="4432.56,-4505.91 4274.18,-4505.91 4274.18,-4469.91 4432.56,-4469.91 4432.56,-4505.91" style=""/>
+<text text-anchor="middle" x="4353.37" y="-4481.91" font-family="Times,serif" font-size="20.00" style="">Lack of Cohesion</text>
+</g>
+<!-- SF3&#45;&#45;LCOM -->
+<g id="edge7" class="edge" data-name="SF3--LCOM">
+
+<path fill="none" stroke="black" d="M4721.65,-3568.11C4676.19,-3688.35 4582.41,-3934.46 4498.96,-4141.27 4448.04,-4267.48 4383.49,-4418.04 4361.29,-4469.57" style=""/>
+</g>
+<!-- WMC -->
+<g id="node58" class="node" pointer-events="visible" data-name="WMC">
+
+<polygon fill="white" stroke="black" points="4124.19,-3515.07 4058.19,-3515.07 4058.19,-3479.07 4124.19,-3479.07 4124.19,-3515.07" style=""/>
+<text text-anchor="middle" x="4091.19" y="-3491.07" font-family="Times,serif" font-size="20.00" style="">WMC</text>
+</g>
+<!-- SF3&#45;&#45;WMC -->
+<g id="edge8" class="edge" data-name="SF3--WMC">
+
+<path fill="none" stroke="black" d="M4670.59,-3494.92C4526.27,-3495.46 4224.94,-3496.57 4124.54,-3496.94" style=""/>
+</g>
+<!-- NOM -->
+<g id="node90" class="node" pointer-events="visible" data-name="NOM">
+
+<polygon fill="white" stroke="black" points="5878.92,-4048.16 5635.55,-4048.16 5635.55,-4012.16 5878.92,-4012.16 5878.92,-4048.16" style=""/>
+<text text-anchor="middle" x="5757.23" y="-4024.16" font-family="Times,serif" font-size="20.00" style="">NOM (Number of Methods)</text>
+</g>
+<!-- SF3&#45;&#45;NOM -->
+<g id="edge9" class="edge" data-name="SF3--NOM">
+
+<path fill="none" stroke="black" d="M4819.03,-3530.96C4913.49,-3580.25 5087.32,-3671.18 5235.2,-3749.72 5419.65,-3847.68 5639.83,-3966.62 5723.09,-4011.67" style=""/>
+</g>
+<!-- NOF -->
+<g id="node91" class="node" pointer-events="visible" data-name="NOF">
+
+<polygon fill="white" stroke="black" points="5643.51,-2076.61 5427.66,-2076.61 5427.66,-2040.61 5643.51,-2040.61 5643.51,-2076.61" style=""/>
+<text text-anchor="middle" x="5535.58" y="-2052.61" font-family="Times,serif" font-size="20.00" style="">NOF (Number of Fields)</text>
+</g>
+<!-- SF3&#45;&#45;NOF -->
+<g id="edge10" class="edge" data-name="SF3--NOF">
+
+<path fill="none" stroke="black" d="M4792.87,-3429.01C4867.48,-3315.57 5023.04,-3074.56 5140.34,-2862.61 5310.18,-2555.73 5487.48,-2165.65 5527.32,-2077.06" style=""/>
+</g>
+<!-- SF4 -->
+<g id="node4" class="node" pointer-events="visible" data-name="SF4">
+
+<ellipse fill="#ffefcc" stroke="black" cx="309.41" cy="-5818.74" rx="127.62" ry="127.62" style=""/>
+<text text-anchor="middle" x="309.41" y="-5812.74" font-family="Times,serif" font-size="20.00" style="">Long Parameter List</text>
+</g>
+<!-- Params -->
+<g id="node42" class="node" pointer-events="visible" data-name="Params">
+
+<polygon fill="white" stroke="black" points="2903.92,-4651.7 2706.83,-4651.7 2706.83,-4615.7 2903.92,-4615.7 2903.92,-4651.7" style=""/>
+<text text-anchor="middle" x="2805.37" y="-4627.7" font-family="Times,serif" font-size="20.00" style="">Number of Parameters</text>
+</g>
+<!-- SF4&#45;&#45;Params -->
+<g id="edge11" class="edge" data-name="SF4--Params">
+
+<path fill="none" stroke="black" d="M427.38,-5769.14C703.93,-5652.18 1414.53,-5347.58 1994.74,-5064.05 2301.82,-4913.99 2663.42,-4713.27 2772.58,-4652.13" style=""/>
+</g>
+<!-- SF5 -->
+<g id="node5" class="node" pointer-events="visible" data-name="SF5">
+
+<ellipse fill="#ffefcc" stroke="black" cx="8072.12" cy="-757.26" rx="114.69" ry="114.69" style=""/>
+<text text-anchor="middle" x="8072.12" y="-751.26" font-family="Times,serif" font-size="20.00" style="">Divergent Change</text>
+</g>
+<!-- ChgFreq -->
+<g id="node52" class="node" pointer-events="visible" data-name="ChgFreq">
+
+<polygon fill="white" stroke="black" points="8238.03,-2295.35 8072.01,-2295.35 8072.01,-2259.35 8238.03,-2259.35 8238.03,-2295.35" style=""/>
+<text text-anchor="middle" x="8155.02" y="-2271.35" font-family="Times,serif" font-size="20.00" style="">Change Frequency</text>
+</g>
+<!-- SF5&#45;&#45;ChgFreq -->
+<g id="edge12" class="edge" data-name="SF5--ChgFreq">
+
+<path fill="none" stroke="black" d="M8078.38,-872.14C8096.19,-1198.6 8146.3,-2117.37 8154.02,-2258.93" style=""/>
+</g>
+<!-- SIDC -->
+<g id="node68" class="node" pointer-events="visible" data-name="SIDC">
+
+<polygon fill="#f9d5ec" stroke="black" points="6544.55,-713.34 6205.12,-713.34 6205.12,-677.34 6544.55,-677.34 6544.55,-713.34" style=""/>
+<text text-anchor="middle" x="6374.83" y="-689.34" font-family="Times,serif" font-size="20.00" style="">Service Interface Data Cohesion (SIDC)</text>
+</g>
+<!-- SF5&#45;&#45;SIDC -->
+<g id="edge13" class="edge" data-name="SF5--SIDC">
+
+<path fill="none" stroke="black" d="M7957.12,-753.07C7664.46,-742.39 6890.18,-714.14 6545.04,-701.55" style=""/>
+</g>
+<!-- SF6 -->
+<g id="node6" class="node" pointer-events="visible" data-name="SF6">
+
+<ellipse fill="#ffefcc" stroke="black" cx="6522.7" cy="-2119.61" rx="106.55" ry="106.55" style=""/>
+<text text-anchor="middle" x="6522.7" y="-2113.61" font-family="Times,serif" font-size="20.00" style="">Shotgun Surgery</text>
+</g>
+<!-- SF6&#45;&#45;ChgFreq -->
+<g id="edge14" class="edge" data-name="SF6--ChgFreq">
+
+<path fill="none" stroke="black" d="M6629.17,-2129.9C6932.85,-2159.24 7798.87,-2242.93 8071.67,-2269.29" style=""/>
+</g>
+<!-- AffCoupl -->
+<g id="node53" class="node" pointer-events="visible" data-name="AffCoupl">
+
+<polygon fill="#d5f5e3" stroke="black" points="5740.76,-2888.83 5577.38,-2888.83 5577.38,-2852.83 5740.76,-2852.83 5740.76,-2888.83" style=""/>
+<text text-anchor="middle" x="5659.07" y="-2864.83" font-family="Times,serif" font-size="20.00" style="">Afferent Coupling</text>
+</g>
+<!-- SF6&#45;&#45;AffCoupl -->
+<g id="edge15" class="edge" data-name="SF6--AffCoupl">
+
+<path fill="none" stroke="black" d="M6442.23,-2189.61C6252.54,-2354.61 5785.45,-2760.9 5680.31,-2852.35" style=""/>
+</g>
+<!-- SF9 -->
+<g id="node7" class="node" pointer-events="visible" data-name="SF9">
+
+<ellipse fill="#ffefcc" stroke="black" cx="2927.08" cy="-6073.64" rx="125.76" ry="125.76" style=""/>
+<text text-anchor="middle" x="2927.08" y="-6067.64" font-family="Times,serif" font-size="20.00" style="">Primitive Obsession</text>
+</g>
+<!-- SF9&#45;&#45;Params -->
+<g id="edge16" class="edge" data-name="SF9--Params">
+
+<path fill="none" stroke="black" d="M2919.22,-5947.62C2908.44,-5779.29 2887.78,-5471.8 2864.81,-5209.62 2845.55,-4989.83 2815.62,-4723.54 2807.48,-4652.08" style=""/>
+</g>
+<!-- SF9&#45;&#45;LCOM -->
+<g id="edge17" class="edge" data-name="SF9--LCOM">
+
+<path fill="none" stroke="black" d="M3017.75,-5986.14C3195.03,-5813.7 3597.49,-5415.48 3909.52,-5056.43 4090.22,-4848.49 4288.14,-4578.08 4340.22,-4506.14" style=""/>
+</g>
+<!-- SF10 -->
+<g id="node8" class="node" pointer-events="visible" data-name="SF10">
+
+<ellipse fill="#ffefcc" stroke="black" cx="5354.15" cy="-7373.85" rx="116.38" ry="116.38" style=""/>
+<text text-anchor="middle" x="5354.15" y="-7367.85" font-family="Times,serif" font-size="20.00" style="">Switch Statements</text>
+</g>
+<!-- SF10&#45;&#45;CC -->
+<g id="edge19" class="edge" data-name="SF10--CC">
+
+<path fill="none" stroke="black" d="M5338.39,-7258.05C5282.75,-6849.08 5097.53,-5487.83 5073.89,-5314.06" style=""/>
+</g>
+<!-- FanOut -->
+<g id="node44" class="node" pointer-events="visible" data-name="FanOut">
+
+<polygon fill="white" stroke="black" points="4587.65,-5385.97 4505.33,-5385.97 4505.33,-5349.97 4587.65,-5349.97 4587.65,-5385.97" style=""/>
+<text text-anchor="middle" x="4546.49" y="-5361.97" font-family="Times,serif" font-size="20.00" style="">Fan-Out</text>
+</g>
+<!-- SF10&#45;&#45;FanOut -->
+<g id="edge18" class="edge" data-name="SF10--FanOut">
+
+<path fill="none" stroke="black" d="M5290.01,-7276.6C5157.57,-7070.59 4854.16,-6571.06 4709.79,-6107.31 4622.18,-5825.86 4562.75,-5470.18 4549.36,-5386.28" style=""/>
+</g>
+<!-- SF11 -->
+<g id="node9" class="node" pointer-events="visible" data-name="SF11">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4399.41" cy="-3732.96" rx="121.78" ry="121.78" style=""/>
+<text text-anchor="middle" x="4399.41" y="-3726.96" font-family="Times,serif" font-size="20.00" style="">Parallel Inheritance</text>
+</g>
+<!-- SF11&#45;&#45;LoC -->
+<g id="edge20" class="edge" data-name="SF11--LoC">
+
+<path fill="none" stroke="black" d="M4290.75,-3788.91C4216.58,-3827.11 4123,-3875.3 4072.87,-3901.12" style=""/>
+</g>
+<!-- SF11&#45;&#45;CBO -->
+<g id="edge22" class="edge" data-name="SF11--CBO">
+
+<path fill="none" stroke="black" d="M4502.72,-3798.26C4577.66,-3845.64 4673.86,-3906.45 4721.16,-3936.35" style=""/>
+</g>
+<!-- ClassCoupl -->
+<g id="node57" class="node" pointer-events="visible" data-name="ClassCoupl">
+
+<polygon fill="#d5f5e3" stroke="black" points="3837.29,-3291.72 3698.7,-3291.72 3698.7,-3255.72 3837.29,-3255.72 3837.29,-3291.72" style=""/>
+<text text-anchor="middle" x="3767.99" y="-3267.72" font-family="Times,serif" font-size="20.00" style="">Class Coupling</text>
+</g>
+<!-- SF11&#45;&#45;ClassCoupl -->
+<g id="edge21" class="edge" data-name="SF11--ClassCoupl">
+
+<path fill="none" stroke="black" d="M4293.54,-3672.5C4224.02,-3631.48 4132.05,-3574.64 4054.99,-3518.27 3948.79,-3440.59 3832.43,-3334.13 3787.34,-3291.98" style=""/>
+</g>
+<!-- SF12 -->
+<g id="node10" class="node" pointer-events="visible" data-name="SF12">
+
+<ellipse fill="#ffefcc" stroke="black" cx="5181.79" cy="-3802.89" rx="73.52" ry="73.52" style=""/>
+<text text-anchor="middle" x="5181.79" y="-3796.89" font-family="Times,serif" font-size="20.00" style="">Lazy Class</text>
+</g>
+<!-- SF12&#45;&#45;LoC -->
+<g id="edge23" class="edge" data-name="SF12--LoC">
+
+<path fill="none" stroke="black" d="M5108.46,-3810.36C4899.14,-3831.67 4301.23,-3892.57 4102.43,-3912.81" style=""/>
+</g>
+<!-- SF12&#45;&#45;LoC -->
+<g id="edge125" class="edge" data-name="SF12--LoC">
+
+<path fill="none" stroke="black" d="M5108.46,-3810.36C4899.14,-3831.67 4301.23,-3892.57 4102.43,-3912.81" style=""/>
+</g>
+<!-- SF12&#45;&#45;DIT -->
+<g id="edge25" class="edge" data-name="SF12--DIT">
+
+<path fill="none" stroke="black" d="M5147.76,-3737.41C5072.04,-3587.57 4891.41,-3206.14 4829.1,-2862.61 4770.63,-2540.26 4822.78,-2136.37 4835.8,-2046.13" style=""/>
+</g>
+<!-- SF12&#45;&#45;CBO -->
+<g id="edge26" class="edge" data-name="SF12--CBO">
+
+<path fill="none" stroke="black" d="M5112.43,-3827.26C5026.02,-3857.63 4880.32,-3908.83 4802.6,-3936.14" style=""/>
+</g>
+<!-- SF12&#45;&#45;AffCoupl -->
+<g id="edge24" class="edge" data-name="SF12--AffCoupl">
+
+<path fill="none" stroke="black" d="M5215.35,-3737.35C5313.17,-3546.32 5594.56,-2996.81 5649.65,-2889.23" style=""/>
+</g>
+<!-- SF12&#45;&#45;AffCoupl -->
+<g id="edge127" class="edge" data-name="SF12--AffCoupl">
+
+<path fill="none" stroke="black" d="M5215.35,-3737.35C5313.17,-3546.32 5594.56,-2996.81 5649.65,-2889.23" style=""/>
+</g>
+<!-- SF12&#45;&#45;WMC -->
+<g id="edge128" class="edge" data-name="SF12--WMC">
+
+<path fill="none" stroke="black" d="M5110.66,-3782.94C4898.54,-3723.46 4275.77,-3548.83 4124.55,-3506.42" style=""/>
+</g>
+<!-- SIX -->
+<g id="node59" class="node" pointer-events="visible" data-name="SIX">
+
+<polygon fill="white" stroke="black" points="4105.4,-4317.77 3874.65,-4317.77 3874.65,-4281.77 4105.4,-4281.77 4105.4,-4317.77" style=""/>
+<text text-anchor="middle" x="3990.03" y="-4293.77" font-family="Times,serif" font-size="20.00" style="">Specialization Index (SIX)</text>
+</g>
+<!-- SF12&#45;&#45;SIX -->
+<g id="edge129" class="edge" data-name="SF12--SIX">
+
+<path fill="none" stroke="black" d="M5117.94,-3840.27C5055.32,-3876.43 4956.74,-3932.04 4869.01,-3975.81 4707.8,-4056.23 4667.49,-4077.6 4498.96,-4141.27 4343.78,-4199.89 4156.4,-4254.12 4057.99,-4281.38" style=""/>
+</g>
+<!-- NCF -->
+<g id="node73" class="node" pointer-events="visible" data-name="NCF">
+
+<polygon fill="white" stroke="black" points="5931.88,-3510.12 5586.03,-3510.12 5586.03,-3474.12 5931.88,-3474.12 5931.88,-3510.12" style=""/>
+<text text-anchor="middle" x="5758.96" y="-3486.12" font-family="Times,serif" font-size="20.00" style="">Number of Computations of Field (NCF)</text>
+</g>
+<!-- SF12&#45;&#45;NCF -->
+<g id="edge135" class="edge" data-name="SF12--NCF">
+
+<path fill="none" stroke="black" d="M5246.88,-3767.84C5369.52,-3701.81 5630.92,-3561.06 5724.64,-3510.6" style=""/>
+</g>
+<!-- SF12&#45;&#45;NOM -->
+<g id="edge126" class="edge" data-name="SF12--NOM">
+
+<path fill="none" stroke="black" d="M5250.63,-3830.08C5369.36,-3876.97 5609.63,-3971.86 5710.73,-4011.8" style=""/>
+</g>
+<!-- SF13 -->
+<g id="node11" class="node" pointer-events="visible" data-name="SF13">
+
+<ellipse fill="#ffefcc" stroke="black" cx="2772.63" cy="-2879.32" rx="140.51" ry="140.51" style=""/>
+<text text-anchor="middle" x="2772.63" y="-2873.32" font-family="Times,serif" font-size="20.00" style="">Speculative Generality</text>
+</g>
+<!-- SF13&#45;&#45;LoC -->
+<g id="edge27" class="edge" data-name="SF13--LoC">
+
+<path fill="none" stroke="black" d="M2897.55,-2944.45C3048.21,-3025.92 3305.53,-3174.61 3500.85,-3337.07 3734.93,-3531.77 3965.52,-3825.53 4023.42,-3901.18" style=""/>
+</g>
+<!-- SF13&#45;&#45;LoC -->
+<g id="edge84" class="edge" data-name="SF13--LoC">
+
+<path fill="none" stroke="black" d="M2897.55,-2944.45C3048.21,-3025.92 3305.53,-3174.61 3500.85,-3337.07 3734.93,-3531.77 3965.52,-3825.53 4023.42,-3901.18" style=""/>
+</g>
+<!-- MIF -->
+<g id="node56" class="node" pointer-events="visible" data-name="MIF">
+
+<polygon fill="white" stroke="black" points="1952.1,-3050.48 1722.59,-3050.48 1722.59,-3014.48 1952.1,-3014.48 1952.1,-3050.48" style=""/>
+<text text-anchor="middle" x="1837.35" y="-3026.48" font-family="Times,serif" font-size="20.00" style="">Method Inheritance Factor</text>
+</g>
+<!-- SF13&#45;&#45;MIF -->
+<g id="edge85" class="edge" data-name="SF13--MIF">
+
+<path fill="none" stroke="black" d="M2633.61,-2902.08C2447.75,-2932.52 2121.84,-2985.89 1950.28,-3013.99" style=""/>
+</g>
+<!-- SF13&#45;&#45;MIF -->
+<g id="edge123" class="edge" data-name="SF13--MIF">
+
+<path fill="none" stroke="black" d="M2633.61,-2902.08C2447.75,-2932.52 2121.84,-2985.89 1950.28,-3013.99" style=""/>
+</g>
+<!-- NMN -->
+<g id="node72" class="node" pointer-events="visible" data-name="NMN">
+
+<polygon fill="white" stroke="black" points="2283.08,-712.56 1911.1,-712.56 1911.1,-676.56 2283.08,-676.56 2283.08,-712.56" style=""/>
+<text text-anchor="middle" x="2097.09" y="-688.56" font-family="Times,serif" font-size="20.00" style="">Number of Methods needing a Field (NMN)</text>
+</g>
+<!-- SF13&#45;&#45;NMN -->
+<g id="edge132" class="edge" data-name="SF13--NMN">
+
+<path fill="none" stroke="black" d="M2731,-2744.71C2593.21,-2299.08 2157.52,-890 2102.76,-712.91" style=""/>
+</g>
+<!-- SF15 -->
+<g id="node12" class="node" pointer-events="visible" data-name="SF15">
+
+<ellipse fill="#ffefcc" stroke="black" cx="8127.24" cy="-3251.44" rx="103.73" ry="103.73" style=""/>
+<text text-anchor="middle" x="8127.24" y="-3245.44" font-family="Times,serif" font-size="20.00" style="">Message Chains</text>
+</g>
+<!-- SF15&#45;&#45;AffCoupl -->
+<g id="edge28" class="edge" data-name="SF15--AffCoupl">
+
+<path fill="none" stroke="black" d="M8027.9,-3220.56C7785.42,-3146.89 7142.69,-2961.7 6591.09,-2891.71 6279.19,-2852.14 5904,-2860.6 5741.15,-2866.98" style=""/>
+</g>
+<!-- SF16 -->
+<g id="node13" class="node" pointer-events="visible" data-name="SF16">
+
+<ellipse fill="#ffefcc" stroke="black" cx="8124.33" cy="-4817.94" rx="81.75" ry="81.75" style=""/>
+<text text-anchor="middle" x="8124.33" y="-4811.94" font-family="Times,serif" font-size="20.00" style="">Middle Man</text>
+</g>
+<!-- SF16&#45;&#45;CC -->
+<g id="edge30" class="edge" data-name="SF16--CC">
+
+<path fill="none" stroke="black" d="M8045.18,-4840.29C7821.94,-4902.4 7167.4,-5078.26 6612.22,-5165.08 6075.44,-5249.03 5424.43,-5281.91 5175.24,-5292" style=""/>
+</g>
+<!-- SF16&#45;&#45;NOM -->
+<g id="edge29" class="edge" data-name="SF16--NOM">
+
+<path fill="none" stroke="black" d="M8048.33,-4786.74C7829.54,-4697.57 7178.41,-4436.71 6623.91,-4260.47 6337.55,-4169.45 5990.37,-4084.77 5836.83,-4048.6" style=""/>
+</g>
+<!-- SF17 -->
+<g id="node14" class="node" pointer-events="visible" data-name="SF17">
+
+<ellipse fill="#ffefcc" stroke="black" cx="5187.17" cy="-4242.75" rx="141.07" ry="141.07" style=""/>
+<text text-anchor="middle" x="5187.17" y="-4236.75" font-family="Times,serif" font-size="20.00" style="">Inappropriate Intimacy</text>
+</g>
+<!-- SF17&#45;&#45;CBO -->
+<g id="edge31" class="edge" data-name="SF17--CBO">
+
+<path fill="none" stroke="black" d="M5069.17,-4164.96C4970.05,-4099.63 4835.65,-4011.03 4778.09,-3973.09" style=""/>
+</g>
+<!-- RFC -->
+<g id="node50" class="node" pointer-events="visible" data-name="RFC">
+
+<polygon fill="white" stroke="black" points="5795.26,-5214.37 5621.69,-5214.37 5621.69,-5178.37 5795.26,-5178.37 5795.26,-5214.37" style=""/>
+<text text-anchor="middle" x="5708.47" y="-5190.37" font-family="Times,serif" font-size="20.00" style="">Response For Class</text>
+</g>
+<!-- SF17&#45;&#45;RFC -->
+<g id="edge32" class="edge" data-name="SF17--RFC">
+
+<path fill="none" stroke="black" d="M5255.05,-4366.93C5381.2,-4597.7 5643.94,-5078.32 5698.44,-5178.02" style=""/>
+</g>
+<!-- TightCoupl -->
+<g id="node54" class="node" pointer-events="visible" data-name="TightCoupl">
+
+<polygon fill="#d5f5e3" stroke="black" points="4512.05,-3256.46 4324.81,-3256.46 4324.81,-3220.46 4512.05,-3220.46 4512.05,-3256.46" style=""/>
+<text text-anchor="middle" x="4418.43" y="-3232.46" font-family="Times,serif" font-size="20.00" style="">Tight Class Coupling</text>
+</g>
+<!-- SF17&#45;&#45;TightCoupl -->
+<g id="edge33" class="edge" data-name="SF17--TightCoupl">
+
+<path fill="none" stroke="black" d="M5101.22,-4130.47C4920.99,-3895.02 4513.47,-3362.62 4432.55,-3256.9" style=""/>
+</g>
+<!-- SF18 -->
+<g id="node15" class="node" pointer-events="visible" data-name="SF18">
+
+<ellipse fill="#ffefcc" stroke="black" cx="389.08" cy="-7341.86" rx="173.5" ry="173.5" style=""/>
+<text text-anchor="middle" x="389.08" y="-7335.86" font-family="Times,serif" font-size="20.00" style="">Alt. Classes - Diff Interfaces</text>
+</g>
+<!-- SF18&#45;&#45;Params -->
+<g id="edge34" class="edge" data-name="SF18--Params">
+
+<path fill="none" stroke="black" d="M504.81,-7212.16C959.44,-6702.61 2607,-4856.04 2789.01,-4652.04" style=""/>
+</g>
+<!-- SF20 -->
+<g id="node16" class="node" pointer-events="visible" data-name="SF20">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3990.08" cy="-2814.45" rx="72.38" ry="72.38" style=""/>
+<text text-anchor="middle" x="3990.08" y="-2808.45" font-family="Times,serif" font-size="20.00" style="">Data Class</text>
+</g>
+<!-- SF20&#45;&#45;DIT -->
+<g id="edge39" class="edge" data-name="SF20--DIT">
+
+<path fill="none" stroke="black" d="M4043.48,-2764.94C4209.62,-2610.89 4712.62,-2144.49 4818.77,-2046.06" style=""/>
+</g>
+<!-- SF20&#45;&#45;LCOM -->
+<g id="edge35" class="edge" data-name="SF20--LCOM">
+
+<path fill="none" stroke="black" d="M4005.6,-2885.26C4031.91,-3006.12 4086.4,-3260.13 4127.39,-3475.87 4183.4,-3770.7 4170.67,-3849.81 4242.19,-4141.27 4273.59,-4269.25 4327.59,-4418.7 4346.55,-4469.76" style=""/>
+</g>
+<!-- SF20&#45;&#45;WMC -->
+<g id="edge36" class="edge" data-name="SF20--WMC">
+
+<path fill="none" stroke="black" d="M4000.76,-2886.53C4023.55,-3040.41 4075.91,-3393.93 4088.45,-3478.6" style=""/>
+</g>
+<!-- NSIC -->
+<g id="node74" class="node" pointer-events="visible" data-name="NSIC">
+
+<polygon fill="white" stroke="black" points="3472.48,-3853.06 3024.17,-3853.06 3024.17,-3817.06 3472.48,-3817.06 3472.48,-3853.06" style=""/>
+<text text-anchor="middle" x="3248.33" y="-3829.06" font-family="Times,serif" font-size="20.00" style="">NSIC (Num Services Involved in Compound Service)</text>
+</g>
+<!-- SF20&#45;&#45;NSIC -->
+<g id="edge38" class="edge" data-name="SF20--NSIC">
+
+<path fill="none" stroke="black" d="M3947.27,-2873.36C3803.96,-3070.54 3345.41,-3701.49 3261.56,-3816.86" style=""/>
+</g>
+<!-- SF20&#45;&#45;NOF -->
+<g id="edge37" class="edge" data-name="SF20--NOF">
+
+<path fill="none" stroke="black" d="M4055.5,-2782.46C4318.36,-2653.91 5293.22,-2177.14 5497.78,-2077.1" style=""/>
+</g>
+<!-- SF21 -->
+<g id="node17" class="node" pointer-events="visible" data-name="SF21">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4476.87" cy="-2740.11" rx="119.17" ry="119.17" style=""/>
+<text text-anchor="middle" x="4476.87" y="-2734.11" font-family="Times,serif" font-size="20.00" style="">Intensive Coupling</text>
+</g>
+<!-- SF21&#45;&#45;LoC -->
+<g id="edge41" class="edge" data-name="SF21--LoC">
+
+<path fill="none" stroke="black" d="M4435.11,-2852.12C4335.35,-3119.77 4088.13,-3783 4044.04,-3901.26" style=""/>
+</g>
+<!-- SF21&#45;&#45;DIT -->
+<g id="edge42" class="edge" data-name="SF21--DIT">
+
+<path fill="none" stroke="black" d="M4531.02,-2633.45C4619.11,-2459.95 4787.81,-2127.69 4829.22,-2046.12" style=""/>
+</g>
+<!-- SF21&#45;&#45;TightCoupl -->
+<g id="edge43" class="edge" data-name="SF21--TightCoupl">
+
+<path fill="none" stroke="black" d="M4462.94,-2858.84C4448.56,-2981.48 4427.3,-3162.84 4420.56,-3220.3" style=""/>
+</g>
+<!-- Deps -->
+<g id="node55" class="node" pointer-events="visible" data-name="Deps">
+
+<polygon fill="white" stroke="black" points="3035.11,-2060.18 2814.38,-2060.18 2814.38,-2024.18 3035.11,-2024.18 3035.11,-2060.18" style=""/>
+<text text-anchor="middle" x="2924.75" y="-2036.18" font-family="Times,serif" font-size="20.00" style="">Number of Dependencies</text>
+</g>
+<!-- SF21&#45;&#45;Deps -->
+<g id="edge44" class="edge" data-name="SF21--Deps">
+
+<path fill="none" stroke="black" d="M4368.03,-2691.17C4055.91,-2550.82 3167.22,-2151.21 2965.72,-2060.6" style=""/>
+</g>
+<!-- SF21&#45;&#45;ClassCoupl -->
+<g id="edge45" class="edge" data-name="SF21--ClassCoupl">
+
+<path fill="none" stroke="black" d="M4381.26,-2812.07C4215.74,-2936.68 3884.61,-3185.94 3792.35,-3255.39" style=""/>
+</g>
+<!-- SF21&#45;&#45;WMC -->
+<g id="edge40" class="edge" data-name="SF21--WMC">
+
+<path fill="none" stroke="black" d="M4422.63,-2846.56C4329.26,-3029.8 4143.99,-3393.44 4100.48,-3478.82" style=""/>
+</g>
+<!-- SJ1 -->
+<g id="node18" class="node" pointer-events="visible" data-name="SJ1">
+
+<ellipse fill="#ffefcc" stroke="black" cx="6549.54" cy="-5963.65" rx="127.96" ry="127.96" style=""/>
+<text text-anchor="middle" x="6549.54" y="-5957.65" font-family="Times,serif" font-size="20.00" style="">Dispersive Coupling</text>
+</g>
+<!-- SJ1&#45;&#45;CC -->
+<g id="edge48" class="edge" data-name="SJ1--CC">
+
+<path fill="none" stroke="black" d="M6432.62,-5910.83C6125.26,-5771.94 5304.93,-5401.28 5112.3,-5314.23" style=""/>
+</g>
+<!-- SJ1&#45;&#45;RFC -->
+<g id="edge49" class="edge" data-name="SJ1--RFC">
+
+<path fill="none" stroke="black" d="M6454.69,-5877.13C6260.29,-5699.78 5826.65,-5304.18 5728.49,-5214.63" style=""/>
+</g>
+<!-- Instab -->
+<g id="node51" class="node" pointer-events="visible" data-name="Instab">
+
+<polygon fill="white" stroke="black" points="8218.4,-5821.1 8121.19,-5821.1 8121.19,-5785.1 8218.4,-5785.1 8218.4,-5821.1" style=""/>
+<text text-anchor="middle" x="8169.79" y="-5797.1" font-family="Times,serif" font-size="20.00" style="">Instability</text>
+</g>
+<!-- SJ1&#45;&#45;Instab -->
+<g id="edge50" class="edge" data-name="SJ1--Instab">
+
+<path fill="none" stroke="black" d="M6677.35,-5950.99C7011.94,-5917.83 7902.7,-5829.57 8120.99,-5807.94" style=""/>
+</g>
+<!-- SJ2 -->
+<g id="node19" class="node" pointer-events="visible" data-name="SJ2">
+
+<ellipse fill="#ffefcc" stroke="black" cx="6378.8" cy="-7404.11" rx="137.01" ry="137.01" style=""/>
+<text text-anchor="middle" x="6378.8" y="-7398.11" font-family="Times,serif" font-size="20.00" style="">Too Many Arguments</text>
+</g>
+<!-- SJ2&#45;&#45;CC -->
+<g id="edge51" class="edge" data-name="SJ2--CC">
+
+<path fill="none" stroke="black" d="M6288.14,-7301.19C6099.83,-7083.59 5660.55,-6555.67 5379.95,-6055.92 5223.06,-5776.48 5103.6,-5401.03 5076.98,-5314.2" style=""/>
+</g>
+<!-- SJ2&#45;&#45;RFC -->
+<g id="edge52" class="edge" data-name="SJ2--RFC">
+
+<path fill="none" stroke="black" d="M6338.88,-7272.61C6203.66,-6827.27 5768.35,-5393.59 5714.05,-5214.74" style=""/>
+</g>
+<!-- SJ2&#45;&#45;Instab -->
+<g id="edge53" class="edge" data-name="SJ2--Instab">
+
+<path fill="none" stroke="black" d="M6481.2,-7312.57C6833.31,-6997.81 7981.89,-5971.07 8149.35,-5821.37" style=""/>
+</g>
+<!-- SGS1 -->
+<g id="node20" class="node" pointer-events="visible" data-name="SGS1">
+
+<ellipse fill="#ffefcc" stroke="black" cx="194.73" cy="-4774.19" rx="194.95" ry="194.95" style=""/>
+<text text-anchor="middle" x="194.73" y="-4768.19" font-family="Times,serif" font-size="20.00" style="">Ignoring Low Memory Warning</text>
+</g>
+<!-- SGS1&#45;&#45;Params -->
+<g id="edge54" class="edge" data-name="SGS1--Params">
+
+<path fill="none" stroke="black" d="M389.88,-4763.69C910.73,-4735.66 2320.27,-4659.8 2706.41,-4639.02" style=""/>
+</g>
+<!-- SGS2 -->
+<g id="node21" class="node" pointer-events="visible" data-name="SGS2">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3474.24" cy="-4638.58" rx="154.06" ry="154.06" style=""/>
+<text text-anchor="middle" x="3474.24" y="-4632.58" font-family="Times,serif" font-size="20.00" style="">Massive View Controller</text>
+</g>
+<!-- SGS2&#45;&#45;Params -->
+<g id="edge56" class="edge" data-name="SGS2--Params">
+
+<path fill="none" stroke="black" d="M3319.95,-4637.46C3191.86,-4636.52 3013.52,-4635.22 2903.96,-4634.42" style=""/>
+</g>
+<!-- SGS2&#45;&#45;LoC -->
+<g id="edge55" class="edge" data-name="SGS2--LoC">
+
+<path fill="none" stroke="black" d="M3569.43,-4517C3709.28,-4338.37 3960.48,-4017.52 4022.92,-3937.77" style=""/>
+</g>
+<!-- SGS2&#45;&#45;LoC -->
+<g id="edge57" class="edge" data-name="SGS2--LoC">
+
+<path fill="none" stroke="black" d="M3569.43,-4517C3709.28,-4338.37 3960.48,-4017.52 4022.92,-3937.77" style=""/>
+</g>
+<!-- SGS3 -->
+<g id="node22" class="node" pointer-events="visible" data-name="SGS3">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3606.48" cy="-5965.97" rx="116.69" ry="116.69" style=""/>
+<text text-anchor="middle" x="3606.48" y="-5959.97" font-family="Times,serif" font-size="20.00" style="">Swiss Army Knife</text>
+</g>
+<!-- SGS3&#45;&#45;LoC -->
+<g id="edge59" class="edge" data-name="SGS3--LoC">
+
+<path fill="none" stroke="black" d="M3593.86,-5849.83C3577.1,-5669.4 3555.24,-5311.55 3607.22,-5014.03 3667,-4671.85 3740.02,-4600.02 3871.64,-4278.57 3926.01,-4145.77 4002,-3990.45 4028.06,-3937.89" style=""/>
+</g>
+<!-- Interfaces -->
+<g id="node49" class="node" pointer-events="visible" data-name="Interfaces">
+
+<polygon fill="white" stroke="black" points="4306.42,-6154.21 4119.37,-6154.21 4119.37,-6118.21 4306.42,-6118.21 4306.42,-6154.21" style=""/>
+<text text-anchor="middle" x="4212.89" y="-6130.21" font-family="Times,serif" font-size="20.00" style="">Number of Interfaces</text>
+</g>
+<!-- SGS3&#45;&#45;Interfaces -->
+<g id="edge58" class="edge" data-name="SGS3--Interfaces">
+
+<path fill="none" stroke="black" d="M3719.12,-5997.59C3845,-6032.93 4044.56,-6088.95 4147.18,-6117.76" style=""/>
+</g>
+<!-- SIUC -->
+<g id="node69" class="node" pointer-events="visible" data-name="SIUC">
+
+<polygon fill="#f9d5ec" stroke="black" points="4042.11,-7253.68 3690.23,-7253.68 3690.23,-7217.68 4042.11,-7217.68 4042.11,-7253.68" style=""/>
+<text text-anchor="middle" x="3866.17" y="-7229.68" font-family="Times,serif" font-size="20.00" style="">Service Interface Usage Cohesion (SIUC)</text>
+</g>
+<!-- SGS3&#45;&#45;SIUC -->
+<g id="edge60" class="edge" data-name="SGS3--SIUC">
+
+<path fill="none" stroke="black" d="M3629.93,-6080.61C3688.25,-6365.79 3837.03,-7093.19 3862.45,-7217.48" style=""/>
+</g>
+<!-- SGS4 -->
+<g id="node23" class="node" pointer-events="visible" data-name="SGS4">
+
+<ellipse fill="#ffefcc" stroke="black" cx="8073.69" cy="-7338.06" rx="144.37" ry="144.37" style=""/>
+<text text-anchor="middle" x="8073.69" y="-7332.06" font-family="Times,serif" font-size="20.00" style="">Unstable Dependencies</text>
+</g>
+<!-- SGS4&#45;&#45;RFC -->
+<g id="edge61" class="edge" data-name="SGS4--RFC">
+
+<path fill="none" stroke="black" d="M7978.74,-7228.86C7757.02,-6976.66 7182.87,-6339.54 6641.47,-5872.33 6306.8,-5583.53 5854.64,-5289.6 5737.26,-5214.63" style=""/>
+</g>
+<!-- SGS4&#45;&#45;Instab -->
+<g id="edge62" class="edge" data-name="SGS4--Instab">
+
+<path fill="none" stroke="black" d="M8082.73,-7193.65C8104.76,-6841.77 8160.05,-5958.72 8168.66,-5821.22" style=""/>
+</g>
+<!-- SGS5 -->
+<g id="node24" class="node" pointer-events="visible" data-name="SGS5">
+
+<ellipse fill="#ffefcc" stroke="black" cx="6623.52" cy="-4347.61" rx="85.59" ry="85.59" style=""/>
+<text text-anchor="middle" x="6623.52" y="-4341.61" font-family="Times,serif" font-size="20.00" style="">SAP Breaker</text>
+</g>
+<!-- SGS5&#45;&#45;CBO -->
+<g id="edge63" class="edge" data-name="SGS5--CBO">
+
+<path fill="none" stroke="black" d="M6539.38,-4329.96C6229.57,-4264.97 5154,-4039.35 4838,-3973.06" style=""/>
+</g>
+<!-- SGS5&#45;&#45;Instab -->
+<g id="edge64" class="edge" data-name="SGS5--Instab">
+
+<path fill="none" stroke="black" d="M6686.05,-4406.47C6953.58,-4658.3 7995.28,-5638.83 8150.42,-5784.87" style=""/>
+</g>
+<!-- SGS7 -->
+<g id="node25" class="node" pointer-events="visible" data-name="SGS7">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4745.88" cy="-4365.53" rx="90.03" ry="90.03" style=""/>
+<text text-anchor="middle" x="4745.88" y="-4359.53" font-family="Times,serif" font-size="20.00" style="">Brain Method</text>
+</g>
+<!-- SGS7&#45;&#45;CC -->
+<g id="edge66" class="edge" data-name="SGS7--CC">
+
+<path fill="none" stroke="black" d="M4775.77,-4450.97C4847.99,-4657.35 5028.69,-5173.71 5064.99,-5277.44" style=""/>
+</g>
+<!-- SGS7&#45;&#45;LoC -->
+<g id="edge65" class="edge" data-name="SGS7--LoC">
+
+<path fill="none" stroke="black" d="M4659.7,-4339.17C4554.74,-4304.46 4375.03,-4236.49 4242.19,-4141.27 4156.96,-4080.18 4079.83,-3979.15 4050.16,-3937.88" style=""/>
+</g>
+<!-- SGS7&#45;&#45;FanOut -->
+<g id="edge67" class="edge" data-name="SGS7--FanOut">
+
+<path fill="none" stroke="black" d="M4717.18,-4450.99C4688.23,-4540.15 4644.17,-4684.46 4617.85,-4812 4574.79,-5020.72 4553.18,-5279.21 4547.83,-5349.57" style=""/>
+</g>
+<!-- SGS7&#45;&#45;LCOM -->
+<g id="edge68" class="edge" data-name="SGS7--LCOM">
+
+<path fill="none" stroke="black" d="M4659.74,-4392.39C4584.82,-4415.75 4478.24,-4448.98 4412.56,-4469.46" style=""/>
+</g>
+<!-- SGS7&#45;&#45;NCF -->
+<g id="edge134" class="edge" data-name="SGS7--NCF">
+
+<path fill="none" stroke="black" d="M4814.32,-4306.53C5018.56,-4130.44 5617.05,-3614.46 5737.64,-3510.5" style=""/>
+</g>
+<!-- SGS9 -->
+<g id="node26" class="node" pointer-events="visible" data-name="SGS9">
+
+<ellipse fill="#ffefcc" stroke="black" cx="2688.8" cy="-3514.46" rx="69.7" ry="69.7" style=""/>
+<text text-anchor="middle" x="2688.8" y="-3508.46" font-family="Times,serif" font-size="20.00" style="">God Class</text>
+</g>
+<!-- SGS9&#45;&#45;Params -->
+<g id="edge69" class="edge" data-name="SGS9--Params">
+
+<path fill="none" stroke="black" d="M2708.68,-3581.53C2737.59,-3682.97 2789.88,-3881.96 2808.89,-4055.23 2832.98,-4274.86 2813.07,-4544.21 2806.99,-4615.63" style=""/>
+</g>
+<!-- SGS9&#45;&#45;LoC -->
+<g id="edge70" class="edge" data-name="SGS9--LoC">
+
+<path fill="none" stroke="black" d="M2755.42,-3536.59C2915.92,-3589.64 3337.07,-3727.24 3692.52,-3829.37 3789.43,-3857.22 3902.7,-3886.12 3972.2,-3903.45" style=""/>
+</g>
+<!-- SGS9&#45;&#45;MIF -->
+<g id="edge124" class="edge" data-name="SGS9--MIF">
+
+<path fill="none" stroke="black" d="M2627.91,-3479.99C2460.44,-3385.19 1996.96,-3122.83 1869.91,-3050.92" style=""/>
+</g>
+<!-- AIS -->
+<g id="node65" class="node" pointer-events="visible" data-name="AIS">
+
+<polygon fill="#d5f5e3" stroke="black" points="1940.05,-3760.38 1705.4,-3760.38 1705.4,-3724.38 1940.05,-3724.38 1940.05,-3760.38" style=""/>
+<text text-anchor="middle" x="1822.73" y="-3736.38" font-family="Times,serif" font-size="20.00" style="">Absolute Importance (AIS)</text>
+</g>
+<!-- SGS9&#45;&#45;AIS -->
+<g id="edge131" class="edge" data-name="SGS9--AIS">
+
+<path fill="none" stroke="black" d="M2621.21,-3532.25C2460.37,-3574.57 2056.2,-3680.94 1892.85,-3723.93" style=""/>
+</g>
+<!-- TSIC -->
+<g id="node70" class="node" pointer-events="visible" data-name="TSIC">
+
+<polygon fill="#f9d5ec" stroke="black" points="2106.04,-4393.49 1764.16,-4393.49 1764.16,-4357.49 2106.04,-4357.49 2106.04,-4393.49" style=""/>
+<text text-anchor="middle" x="1935.1" y="-4369.49" font-family="Times,serif" font-size="20.00" style="">Total Service Interface Cohesion (TSIC)</text>
+</g>
+<!-- SGS9&#45;&#45;TSIC -->
+<g id="edge71" class="edge" data-name="SGS9--TSIC">
+
+<path fill="none" stroke="black" d="M2642.79,-3567.02C2495.93,-3734.8 2042.67,-4252.6 1951.26,-4357.03" style=""/>
+</g>
+<!-- NFM -->
+<g id="node71" class="node" pointer-events="visible" data-name="NFM">
+
+<polygon fill="white" stroke="black" points="2093.47,-2136.99 1777.44,-2136.99 1777.44,-2100.99 2093.47,-2100.99 2093.47,-2136.99" style=""/>
+<text text-anchor="middle" x="1935.45" y="-2112.99" font-family="Times,serif" font-size="20.00" style="">Number of Fields per Method (NFM)</text>
+</g>
+<!-- SGS9&#45;&#45;NFM -->
+<g id="edge130" class="edge" data-name="SGS9--NFM">
+
+<path fill="none" stroke="black" d="M2655.46,-3452.7C2520.91,-3203.47 2021.5,-2278.38 1945.25,-2137.13" style=""/>
+</g>
+<!-- SCP -->
+<g id="node80" class="node" pointer-events="visible" data-name="SCP">
+
+<polygon fill="white" stroke="black" points="476.59,-2288.59 176.83,-2288.59 176.83,-2252.59 476.59,-2252.59 476.59,-2288.59" style=""/>
+<text text-anchor="middle" x="326.71" y="-2264.59" font-family="Times,serif" font-size="20.00" style="">SCP (Service Composition Pattern)</text>
+</g>
+<!-- SGS9&#45;&#45;SCP -->
+<g id="edge158" class="edge" data-name="SGS9--SCP">
+
+<path fill="none" stroke="black" d="M2624.84,-3485.89C2468.58,-3415.69 2055.58,-3227.77 1719.52,-3053.68 1164.08,-2765.94 506.47,-2377.51 357.66,-2289.04" style=""/>
+</g>
+<!-- TCC -->
+<g id="node92" class="node" pointer-events="visible" data-name="TCC">
+
+<polygon fill="white" stroke="black" points="513.86,-774.27 267.97,-774.27 267.97,-738.27 513.86,-738.27 513.86,-774.27" style=""/>
+<text text-anchor="middle" x="390.91" y="-750.27" font-family="Times,serif" font-size="20.00" style="">Tight Class Cohesion (TCC)</text>
+</g>
+<!-- SGS9&#45;&#45;TCC -->
+<g id="edge73" class="edge" data-name="SGS9--TCC">
+
+<path fill="none" stroke="black" d="M2643.93,-3460.6C2339.91,-3095.68 588.42,-993.34 406.23,-774.66" style=""/>
+</g>
+<!-- ATFD -->
+<g id="node93" class="node" pointer-events="visible" data-name="ATFD">
+
+<polygon fill="#f9d5ec" stroke="black" points="327.55,-3328.02 54.12,-3328.02 54.12,-3292.02 327.55,-3292.02 327.55,-3328.02" style=""/>
+<text text-anchor="middle" x="190.84" y="-3304.02" font-family="Times,serif" font-size="20.00" style="">Access to Foreign Data (ATFD)</text>
+</g>
+<!-- SGS9&#45;&#45;ATFD -->
+<g id="edge72" class="edge" data-name="SGS9--ATFD">
+
+<path fill="none" stroke="black" d="M2619.06,-3508.75C2278.7,-3480.9 789.84,-3359.05 327.98,-3321.25" style=""/>
+</g>
+<!-- SGS10 -->
+<g id="node27" class="node" pointer-events="visible" data-name="SGS10">
+
+<ellipse fill="#ffefcc" stroke="black" cx="5757.52" cy="-4568.91" rx="161.22" ry="161.22" style=""/>
+<text text-anchor="middle" x="5757.52" y="-4562.91" font-family="Times,serif" font-size="20.00" style="">Missing Template Method</text>
+</g>
+<!-- SGS10&#45;&#45;CBO -->
+<g id="edge75" class="edge" data-name="SGS10--CBO">
+
+<path fill="none" stroke="black" d="M5648.64,-4449.41C5558.95,-4356.31 5424.78,-4228.72 5288.45,-4141.96 5247.44,-4115.86 5233.04,-4116.89 5187.51,-4099.86 5054.28,-4050.04 4895.16,-3999.38 4810.34,-3973.06" style=""/>
+</g>
+<!-- SGS10&#45;&#45;RFC -->
+<g id="edge76" class="edge" data-name="SGS10--RFC">
+
+<path fill="none" stroke="black" d="M5744.92,-4730.09C5732.6,-4887.68 5714.98,-5113.14 5709.89,-5178.18" style=""/>
+</g>
+<!-- SGS11 -->
+<g id="node28" class="node" pointer-events="visible" data-name="SGS11">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3635.98" cy="-2033.53" rx="72.7" ry="72.7" style=""/>
+<text text-anchor="middle" x="3635.98" y="-2027.53" font-family="Times,serif" font-size="20.00" style="">Comments</text>
+</g>
+<!-- SGS11&#45;&#45;LoC -->
+<g id="edge77" class="edge" data-name="SGS11--LoC">
+
+<path fill="none" stroke="black" d="M3651.16,-2104.88C3719.52,-2426.16 3997.05,-3730.46 4033.34,-3901.02" style=""/>
+</g>
+<!-- SGS12 -->
+<g id="node29" class="node" pointer-events="visible" data-name="SGS12">
+
+<ellipse fill="#ffefcc" stroke="black" cx="6589.9" cy="-3017.32" rx="124.03" ry="124.03" style=""/>
+<text text-anchor="middle" x="6589.9" y="-3011.32" font-family="Times,serif" font-size="20.00" style="">Distorted Hierarchy</text>
+</g>
+<!-- SGS12&#45;&#45;CBO -->
+<g id="edge78" class="edge" data-name="SGS12--CBO">
+
+<path fill="none" stroke="black" d="M6474.85,-3064.59C6285.93,-3143.23 5899.37,-3308.37 5583.05,-3470.92 5259.91,-3636.97 4885.32,-3869.53 4779.32,-3936.13" style=""/>
+</g>
+<!-- SGS13 -->
+<g id="node30" class="node" pointer-events="visible" data-name="SGS13">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3693.16" cy="-3715.55" rx="112.46" ry="112.46" style=""/>
+<text text-anchor="middle" x="3693.16" y="-3709.55" font-family="Times,serif" font-size="20.00" style="">Tradition Breaker</text>
+</g>
+<!-- SGS13&#45;&#45;Params -->
+<g id="edge79" class="edge" data-name="SGS13--Params">
+
+<path fill="none" stroke="black" d="M3600.02,-3778.85C3430.02,-3895.68 3078.31,-4143.79 2984.54,-4259.43 2888.13,-4378.33 2828.32,-4557.72 2810.78,-4615.25" style=""/>
+</g>
+<!-- SGS13&#45;&#45;LoC -->
+<g id="edge80" class="edge" data-name="SGS13--LoC">
+
+<path fill="none" stroke="black" d="M3789.93,-3772.89C3862.68,-3816 3957.81,-3872.37 4006.15,-3901.01" style=""/>
+</g>
+<!-- SGS13&#45;&#45;TightCoupl -->
+<g id="edge81" class="edge" data-name="SGS13--TightCoupl">
+
+<path fill="none" stroke="black" d="M3787.14,-3653.06C3860.11,-3604.59 3963.87,-3535.81 4054.99,-3475.87 4179.66,-3393.86 4328.89,-3296.69 4390.11,-3256.86" style=""/>
+</g>
+<!-- SGS13&#45;&#45;Deps -->
+<g id="edge82" class="edge" data-name="SGS13--Deps">
+
+<path fill="none" stroke="black" d="M3645.64,-3613.22C3568.08,-3446.12 3409.58,-3104.17 3276.45,-2814.07 3138.39,-2513.26 2971.67,-2145.69 2933.02,-2060.43" style=""/>
+</g>
+<!-- SGS13&#45;&#45;MIF -->
+<g id="edge122" class="edge" data-name="SGS13--MIF">
+
+<path fill="none" stroke="black" d="M3587.39,-3676.62C3239.08,-3548.42 2135.99,-3142.4 1887.43,-3050.91" style=""/>
+</g>
+<!-- SGS13&#45;&#45;SIX -->
+<g id="edge83" class="edge" data-name="SGS13--SIX">
+
+<path fill="none" stroke="black" d="M3744.19,-3815.98C3816.8,-3958.87 3945.09,-4211.33 3980.66,-4281.32" style=""/>
+</g>
+<!-- SGS13&#45;&#45;NMN -->
+<g id="edge133" class="edge" data-name="SGS13--NMN">
+
+<path fill="none" stroke="black" d="M3642.85,-3614.78C3604.46,-3538.31 3549.98,-3430.73 3500.85,-3337.07 3201.81,-2767.04 3113.49,-2631.78 2811.36,-2063.38 2518.54,-1512.48 2167.75,-831.84 2106.45,-712.75" style=""/>
+</g>
+<!-- SF22 -->
+<g id="node31" class="node" pointer-events="visible" data-name="SF22">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3898.18" cy="-689.75" rx="106.99" ry="106.99" style=""/>
+<text text-anchor="middle" x="3898.18" y="-683.75" font-family="Times,serif" font-size="20.00" style="">Temporary Field</text>
+</g>
+<!-- SF22&#45;&#45;TightCoupl -->
+<g id="edge121" class="edge" data-name="SF22--TightCoupl">
+
+<path fill="none" stroke="black" d="M3913.94,-795.97C3947.75,-1020.31 4031.67,-1558.58 4123.4,-2005.99 4225.58,-2504.41 4383.9,-3108.04 4413.55,-3220.1" style=""/>
+</g>
+<!-- SF22&#45;&#45;NFM -->
+<g id="edge118" class="edge" data-name="SF22--NFM">
+
+<path fill="none" stroke="black" d="M3811.31,-753C3460.58,-1008.4 2158.26,-1956.74 1960.65,-2100.64" style=""/>
+</g>
+<!-- SF22&#45;&#45;NMN -->
+<g id="edge119" class="edge" data-name="SF22--NMN">
+
+<path fill="none" stroke="black" d="M3790.76,-691.8C3681.21,-693.78 3506.33,-696.64 3355.11,-697.75 2974.41,-700.56 2528.89,-698.06 2283.33,-696.18" style=""/>
+</g>
+<!-- SF22&#45;&#45;NCF -->
+<g id="edge120" class="edge" data-name="SF22--NCF">
+
+<path fill="none" stroke="black" d="M3951.37,-782.73C4079.19,-1004.96 4415.92,-1583.07 4723.82,-2048.9 5119.97,-2648.25 5652.5,-3352.14 5744.99,-3473.78" style=""/>
+</g>
+<!-- SF8 -->
+<g id="node32" class="node" pointer-events="visible" data-name="SF8">
+
+<ellipse fill="#ffefcc" stroke="black" cx="2091.23" cy="-7405.65" rx="106.51" ry="106.51" style=""/>
+<text text-anchor="middle" x="2091.23" y="-7399.65" font-family="Times,serif" font-size="20.00" style="">Refused Bequest</text>
+</g>
+<!-- SF8&#45;&#45;SIX -->
+<g id="edge174" class="edge" data-name="SF8--SIX">
+
+<path fill="none" stroke="black" d="M2159.95,-7323.66C2320.84,-7129.63 2730.04,-6624.01 3016.73,-6163.92 3043.36,-6121.18 3819.92,-4595.33 3844.06,-4551.14 3892.33,-4462.79 3954.02,-4359.48 3978.89,-4318.18" style=""/>
+</g>
+<!-- SF23 -->
+<g id="node33" class="node" pointer-events="visible" data-name="SF23">
+
+<ellipse fill="#ffefcc" stroke="black" cx="1918.79" cy="-5984.13" rx="85.61" ry="85.61" style=""/>
+<text text-anchor="middle" x="1918.79" y="-5978.13" font-family="Times,serif" font-size="20.00" style="">Data Clumps</text>
+</g>
+<!-- SF23&#45;&#45;Params -->
+<g id="edge46" class="edge" data-name="SF23--Params">
+
+<path fill="none" stroke="black" d="M1965.83,-5912.48C2134.44,-5655.65 2703.3,-4789.17 2793.33,-4652.04" style=""/>
+</g>
+<!-- SF23&#45;&#45;LCOM -->
+<g id="edge47" class="edge" data-name="SF23--LCOM">
+
+<path fill="none" stroke="black" d="M1989.8,-5935.84C2178.11,-5808.5 2707.15,-5455.22 3165.79,-5191.39 3541.65,-4975.17 3668.12,-4978.33 4032.18,-4742.78 4153.21,-4664.47 4283.73,-4550.58 4333,-4506.39" style=""/>
+</g>
+<!-- SF24 -->
+<g id="node34" class="node" pointer-events="visible" data-name="SF24">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4706.56" cy="-4812.5" rx="87.21" ry="87.21" style=""/>
+<text text-anchor="middle" x="4706.56" y="-4806.5" font-family="Times,serif" font-size="20.00" style="">Feature Envy</text>
+</g>
+<!-- SF24&#45;&#45;CBO -->
+<g id="edge86" class="edge" data-name="SF24--CBO">
+
+<path fill="none" stroke="black" d="M4687.63,-4727.07C4669.82,-4637.31 4646.89,-4491.89 4654.01,-4365.5 4662.77,-4210.08 4723.16,-4029.56 4743.43,-3972.71" style=""/>
+</g>
+<!-- SF24&#45;&#45;LCOM -->
+<g id="edge87" class="edge" data-name="SF24--LCOM">
+
+<path fill="none" stroke="black" d="M4642.19,-4753.34C4560.61,-4678.37 4424.48,-4553.26 4373.48,-4506.39" style=""/>
+</g>
+<!-- Foreign -->
+<g id="node48" class="node" pointer-events="visible" data-name="Foreign">
+
+<polygon fill="white" stroke="black" points="8310.36,-4052.97 8107.03,-4052.97 8107.03,-4016.97 8310.36,-4016.97 8310.36,-4052.97" style=""/>
+<text text-anchor="middle" x="8208.7" y="-4028.97" font-family="Times,serif" font-size="20.00" style="">Access to Foreign Data</text>
+</g>
+<!-- SF24&#45;&#45;Foreign -->
+<g id="edge88" class="edge" data-name="SF24--Foreign">
+
+<path fill="none" stroke="black" d="M4785.21,-4773.78C4861.9,-4736.39 4982.09,-4678.76 5087.81,-4632.26 5375.48,-4505.73 5452.58,-4481.12 5757.72,-4405.95 6653.8,-4185.22 7768.41,-4073.98 8106.72,-4043.68" style=""/>
+</g>
+<!-- MSA11 -->
+<g id="node35" class="node" pointer-events="visible" data-name="MSA11">
+
+<ellipse fill="#ffefcc" stroke="black" cx="5172.01" cy="-4717.4" rx="118.29" ry="118.29" style=""/>
+<text text-anchor="middle" x="5172.01" y="-4711.4" font-family="Times,serif" font-size="20.00" style="">Poor API Gateway</text>
+</g>
+<!-- MSA11&#45;&#45;FanOut -->
+<g id="edge89" class="edge" data-name="MSA11--FanOut">
+
+<path fill="none" stroke="black" d="M5089.92,-4802.79C4942.25,-4956.37 4640.13,-5270.59 4564.13,-5349.62" style=""/>
+</g>
+<!-- MSA11&#45;&#45;CBO -->
+<g id="edge91" class="edge" data-name="MSA11--CBO">
+
+<path fill="none" stroke="black" d="M5114.67,-4613.74C5013.15,-4430.23 4808,-4059.36 4760.18,-3972.91" style=""/>
+</g>
+<!-- MSA11&#45;&#45;RFC -->
+<g id="edge90" class="edge" data-name="MSA11--RFC">
+
+<path fill="none" stroke="black" d="M5260.6,-4796.49C5388.86,-4911.01 5618.56,-5116.09 5688.02,-5178.11" style=""/>
+</g>
+<!-- MSA12 -->
+<g id="node36" class="node" pointer-events="visible" data-name="MSA12">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3938.12" cy="-4646.96" rx="132.84" ry="132.84" style=""/>
+<text text-anchor="middle" x="3938.12" y="-4640.96" font-family="Times,serif" font-size="20.00" style="">Overloaded Endpoint</text>
+</g>
+<!-- MSA12&#45;&#45;CC -->
+<g id="edge93" class="edge" data-name="MSA12--CC">
+
+<path fill="none" stroke="black" d="M4060.16,-4700.55C4140.58,-4736.94 4247.57,-4787.42 4339.18,-4837.64 4623.53,-4993.51 4949.97,-5212.94 5044.49,-5277.32" style=""/>
+</g>
+<!-- MSA12&#45;&#45;Params -->
+<g id="edge94" class="edge" data-name="MSA12--Params">
+
+<path fill="none" stroke="black" d="M3818.06,-4704.88C3726.07,-4744.32 3594.72,-4790.15 3473.3,-4794.46 3230.44,-4803.1 2951.06,-4696.15 2847.14,-4652.13" style=""/>
+</g>
+<!-- MSA12&#45;&#45;LoC -->
+<g id="edge92" class="edge" data-name="MSA12--LoC">
+
+<path fill="none" stroke="black" d="M3891.14,-4522.44C3870.23,-4450.84 3853.91,-4359.34 3871.64,-4278.57 3902.26,-4139.08 3992.46,-3989.18 4025.21,-3937.88" style=""/>
+</g>
+<!-- DGS -->
+<g id="node61" class="node" pointer-events="visible" data-name="DGS">
+
+<polygon fill="white" stroke="black" points="3906.28,-5053.23 3610.47,-5053.23 3610.47,-5017.23 3906.28,-5017.23 3906.28,-5053.23" style=""/>
+<text text-anchor="middle" x="3758.37" y="-5029.23" font-family="Times,serif" font-size="20.00" style="">Data Granularity of Service (DGS)</text>
+</g>
+<!-- MSA12&#45;&#45;DGS -->
+<g id="edge95" class="edge" data-name="MSA12--DGS">
+
+<path fill="none" stroke="black" d="M3882.11,-4767.95C3840.38,-4858.08 3787.25,-4972.86 3766.86,-5016.89" style=""/>
+</g>
+<!-- NOO -->
+<g id="node63" class="node" pointer-events="visible" data-name="NOO">
+
+<polygon fill="white" stroke="black" points="4160.25,-5408.36 3903.05,-5408.36 3903.05,-5372.36 4160.25,-5372.36 4160.25,-5408.36" style=""/>
+<text text-anchor="middle" x="4031.65" y="-5384.36" font-family="Times,serif" font-size="20.00" style="">Number of Operations (NOO)</text>
+</g>
+<!-- MSA12&#45;&#45;NOO -->
+<g id="edge96" class="edge" data-name="MSA12--NOO">
+
+<path fill="none" stroke="black" d="M3954.73,-4779.01C3978.17,-4965.3 4019.22,-5291.61 4029.34,-5372.05" style=""/>
+</g>
+<!-- ADS -->
+<g id="node66" class="node" pointer-events="visible" data-name="ADS">
+
+<polygon fill="#d5f5e3" stroke="black" points="4495.95,-4138.07 4245.2,-4138.07 4245.2,-4102.07 4495.95,-4102.07 4495.95,-4138.07" style=""/>
+<text text-anchor="middle" x="4370.57" y="-4114.07" font-family="Times,serif" font-size="20.00" style="">Absolute Dependence (ADS)</text>
+</g>
+<!-- MSA12&#45;&#45;ADS -->
+<g id="edge97" class="edge" data-name="MSA12--ADS">
+
+<path fill="none" stroke="black" d="M4022.53,-4544.12C4128.72,-4414.74 4303.49,-4201.8 4355.51,-4138.41" style=""/>
+</g>
+<!-- MSA13 -->
+<g id="node37" class="node" pointer-events="visible" data-name="MSA13">
+
+<ellipse fill="#ffefcc" stroke="black" cx="3657.19" cy="-4148.39" rx="147.94" ry="147.94" style=""/>
+<text text-anchor="middle" x="3657.19" y="-4142.39" font-family="Times,serif" font-size="20.00" style="">Fat Service (Megastore)</text>
+</g>
+<!-- MSA13&#45;&#45;LoC -->
+<g id="edge99" class="edge" data-name="MSA13--LoC">
+
+<path fill="none" stroke="black" d="M3784.28,-4071.84C3863.48,-4024.13 3959.12,-3966.52 4006.94,-3937.71" style=""/>
+</g>
+<!-- MSA13&#45;&#45;CBO -->
+<g id="edge100" class="edge" data-name="MSA13--CBO">
+
+<path fill="none" stroke="black" d="M3803.16,-4122.51C4027.14,-4082.79 4450.15,-4007.78 4645.87,-3973.08" style=""/>
+</g>
+<!-- MSA13&#45;&#45;ClassCoupl -->
+<g id="edge101" class="edge" data-name="MSA13--ClassCoupl">
+
+<path fill="none" stroke="black" d="M3720.13,-4014.21C3755.16,-3930.61 3794.21,-3819.63 3806.98,-3716.18 3827.26,-3552.02 3786.18,-3352.32 3772.33,-3291.89" style=""/>
+</g>
+<!-- MSA13&#45;&#45;WMC -->
+<g id="edge98" class="edge" data-name="MSA13--WMC">
+
+<path fill="none" stroke="black" d="M3739.33,-4025.11C3847.7,-3862.47 4030.42,-3588.26 4079.02,-3515.33" style=""/>
+</g>
+<!-- SGM -->
+<g id="node60" class="node" pointer-events="visible" data-name="SGM">
+
+<polygon fill="white" stroke="black" points="3462.2,-5230.59 3168.92,-5230.59 3168.92,-5194.59 3462.2,-5194.59 3462.2,-5230.59" style=""/>
+<text text-anchor="middle" x="3315.56" y="-5206.59" font-family="Times,serif" font-size="20.00" style="">Service Granularity Metric (SGM)</text>
+</g>
+<!-- MSA13&#45;&#45;SGM -->
+<g id="edge102" class="edge" data-name="MSA13--SGM">
+
+<path fill="none" stroke="black" d="M3662.14,-4296.64C3662.24,-4395.06 3656.21,-4526.46 3630.11,-4639.52 3574.46,-4880.59 3385.49,-5126.65 3330.61,-5194.39" style=""/>
+</g>
+<!-- MSA13&#45;&#45;DGS -->
+<g id="edge104" class="edge" data-name="MSA13--DGS">
+
+<path fill="none" stroke="black" d="M3674.01,-4295.83C3699.47,-4518.94 3745.92,-4926.06 3756.28,-5016.92" style=""/>
+</g>
+<!-- FGS -->
+<g id="node62" class="node" pointer-events="visible" data-name="FGS">
+
+<polygon fill="#f9d5ec" stroke="black" points="2861.8,-5248.82 2521.05,-5248.82 2521.05,-5212.82 2861.8,-5212.82 2861.8,-5248.82" style=""/>
+<text text-anchor="middle" x="2691.42" y="-5224.82" font-family="Times,serif" font-size="20.00" style="">Functional Granularity of Service (FGS)</text>
+</g>
+<!-- MSA13&#45;&#45;FGS -->
+<g id="edge103" class="edge" data-name="MSA13--FGS">
+
+<path fill="none" stroke="black" d="M3558.37,-4259.14C3335.79,-4508.61 2806.82,-5101.49 2707.61,-5212.68" style=""/>
+</g>
+<!-- MSA13&#45;&#45;NOO -->
+<g id="edge105" class="edge" data-name="MSA13--NOO">
+
+<path fill="none" stroke="black" d="M3698.77,-4290.79C3727.93,-4390.3 3767.96,-4526.21 3803.86,-4645.72 3890.98,-4935.74 4000.04,-5288.34 4025.94,-5371.96" style=""/>
+</g>
+<!-- MSA13&#45;&#45;AIS -->
+<g id="edge106" class="edge" data-name="MSA13--AIS">
+
+<path fill="none" stroke="black" d="M3512.47,-4116.36C3146.56,-4035.38 2193.1,-3824.35 1905.83,-3760.77" style=""/>
+</g>
+<!-- MSA13&#45;&#45;ADS -->
+<g id="edge107" class="edge" data-name="MSA13--ADS">
+
+<path fill="none" stroke="black" d="M3805.43,-4142.5C3935.35,-4137.35 4122.11,-4129.93 4244.85,-4125.06" style=""/>
+</g>
+<!-- ACS -->
+<g id="node67" class="node" pointer-events="visible" data-name="ACS">
+
+<polygon fill="#d5f5e3" stroke="black" points="2805.46,-4094.43 2574.38,-4094.43 2574.38,-4058.43 2805.46,-4058.43 2805.46,-4094.43" style=""/>
+<text text-anchor="middle" x="2689.92" y="-4070.43" font-family="Times,serif" font-size="20.00" style="">Absolute Criticality (ACS)</text>
+</g>
+<!-- MSA13&#45;&#45;ACS -->
+<g id="edge108" class="edge" data-name="MSA13--ACS">
+
+<path fill="none" stroke="black" d="M3509.23,-4137.38C3315.93,-4123 2981.47,-4098.12 2805.62,-4085.04" style=""/>
+</g>
+<!-- MSA13&#45;&#45;TSIC -->
+<g id="edge74" class="edge" data-name="MSA13--TSIC">
+
+<path fill="none" stroke="black" d="M3510.36,-4167.75C3182.88,-4210.94 2396.32,-4314.67 2075.21,-4357.01" style=""/>
+</g>
+<!-- SGS15 -->
+<g id="node38" class="node" pointer-events="visible" data-name="SGS15">
+
+<ellipse fill="#ffefcc" stroke="black" cx="6613.16" cy="-5047.32" rx="116.33" ry="116.33" style=""/>
+<text text-anchor="middle" x="6613.16" y="-5041.32" font-family="Times,serif" font-size="20.00" style="">Leaky Abstraction</text>
+</g>
+<!-- SGS15&#45;&#45;CBO -->
+<g id="edge109" class="edge" data-name="SGS15--CBO">
+
+<path fill="none" stroke="black" d="M6526.65,-4969.08C6392.48,-4849.85 6123.51,-4619.1 5872.89,-4453.83 5586.69,-4265.09 5508.63,-4219.95 5187.51,-4099.86 5054.28,-4050.04 4895.16,-3999.38 4810.34,-3973.06" style=""/>
+</g>
+<!-- SGS15&#45;&#45;Foreign -->
+<g id="edge110" class="edge" data-name="SGS15--Foreign">
+
+<path fill="none" stroke="black" d="M6711.76,-4984.76C7026.84,-4784.85 7999.24,-4167.87 8179.71,-4053.36" style=""/>
+</g>
+<!-- SGS15&#45;&#45;RFC -->
+<g id="edge111" class="edge" data-name="SGS15--RFC">
+
+<path fill="none" stroke="black" d="M6498.12,-5066.28C6314.66,-5096.5 5959.81,-5154.96 5795.66,-5182.01" style=""/>
+</g>
+<!-- MSA14 -->
+<g id="node39" class="node" pointer-events="visible" data-name="MSA14">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4849.57" cy="-6108.22" rx="138.36" ry="138.36" style=""/>
+<text text-anchor="middle" x="4849.57" y="-6102.22" font-family="Times,serif" font-size="20.00" style="">Endpoint Proliferation</text>
+</g>
+<!-- MSA14&#45;&#45;FanOut -->
+<g id="edge113" class="edge" data-name="MSA14--FanOut">
+
+<path fill="none" stroke="black" d="M4797.12,-5980.13C4721.47,-5795.36 4587.16,-5467.31 4554.03,-5386.39" style=""/>
+</g>
+<!-- MSA14&#45;&#45;Interfaces -->
+<g id="edge112" class="edge" data-name="MSA14--Interfaces">
+
+<path fill="none" stroke="black" d="M4711.03,-6114.31C4588.67,-6119.69 4413.57,-6127.39 4306.87,-6132.08" style=""/>
+</g>
+<!-- MSA14&#45;&#45;RFC -->
+<g id="edge114" class="edge" data-name="MSA14--RFC">
+
+<path fill="none" stroke="black" d="M4944.77,-6007.15C5144.59,-5795.01 5597.08,-5314.63 5691.15,-5214.76" style=""/>
+</g>
+<!-- MSA14&#45;&#45;NOO -->
+<g id="edge115" class="edge" data-name="MSA14--NOO">
+
+<path fill="none" stroke="black" d="M4745.57,-6016.94C4552.37,-5847.39 4148.99,-5493.35 4052.64,-5408.79" style=""/>
+</g>
+<!-- MSA14&#45;&#45;SIUC -->
+<g id="edge116" class="edge" data-name="MSA14--SIUC">
+
+<path fill="none" stroke="black" d="M4758.38,-6212.77C4537.21,-6466.34 3983,-7101.73 3882.08,-7217.45" style=""/>
+</g>
+<!-- MSA15 -->
+<g id="node40" class="node" pointer-events="visible" data-name="MSA15">
+
+<ellipse fill="#ffefcc" stroke="black" cx="4786.44" cy="-122.44" rx="122.38" ry="122.38" style=""/>
+<text text-anchor="middle" x="4786.44" y="-116.44" font-family="Times,serif" font-size="20.00" style="">Cyclic Dependency</text>
+</g>
+<!-- SIY -->
+<g id="node64" class="node" pointer-events="visible" data-name="SIY">
+
+<polygon fill="#d5f5e3" stroke="black" points="5212.4,-139.96 4949.09,-139.96 4949.09,-103.96 5212.4,-103.96 5212.4,-139.96" style=""/>
+<text text-anchor="middle" x="5080.74" y="-115.96" font-family="Times,serif" font-size="20.00" style="">Service Interdependence (SIY)</text>
+</g>
+<!-- MSA15&#45;&#45;SIY -->
+<g id="edge117" class="edge" data-name="MSA15--SIY">
+
+<path fill="none" stroke="black" d="M4909.12,-122.24C4922.21,-122.22 4935.57,-122.2 4948.76,-122.18" style=""/>
+</g>
+<!-- AIS&#45;&#45;SGS9 -->
+<g id="edge138" class="edge" data-name="AIS--SGS9">
+
+<path fill="none" stroke="black" d="M1892.87,-3723.92C2056.16,-3680.95 2460.05,-3574.66 2621.01,-3532.3" style=""/>
+</g>
+<!-- AIS&#45;&#45;MSA13 -->
+<g id="edge139" class="edge" data-name="AIS--MSA13">
+
+<path fill="none" stroke="black" d="M1906.02,-3760.82C2193.54,-3824.45 3146.78,-4035.43 3512.56,-4116.38" style=""/>
+</g>
+<!-- ADS&#45;&#45;SF21 -->
+<g id="edge140" class="edge" data-name="ADS--SF21">
+
+<path fill="none" stroke="black" d="M4380.7,-4101.93C4410.16,-4047.98 4495.44,-3882.92 4522.65,-3733.6 4579.59,-3421.04 4531.03,-3044.55 4499.21,-2857.49" style=""/>
+</g>
+<!-- ADS&#45;&#45;CBO -->
+<g id="edge142" class="edge" data-name="ADS--CBO">
+
+<path fill="none" stroke="black" d="M4413,-4101.57C4486.11,-4069.69 4634.98,-4004.78 4707.9,-3972.99" style=""/>
+</g>
+<!-- ADS&#45;&#45;AffCoupl -->
+<g id="edge143" class="edge" data-name="ADS--AffCoupl">
+
+<path fill="none" stroke="black" d="M4394.92,-4101.7C4525.28,-4003.17 5140.86,-3535.23 5304.77,-3361.75 5462.13,-3195.2 5608.41,-2956.31 5648.37,-2889.06" style=""/>
+</g>
+<!-- ADS&#45;&#45;TightCoupl -->
+<g id="edge141" class="edge" data-name="ADS--TightCoupl">
+
+<path fill="none" stroke="black" d="M4362.57,-4101.88C4339.23,-4047.11 4273.13,-3878.48 4276.17,-3732.32 4280.18,-3539.63 4378.7,-3320.52 4409.39,-3256.75" style=""/>
+</g>
+<!-- ACS&#45;&#45;SGS9 -->
+<g id="edge144" class="edge" data-name="ACS--SGS9">
+
+<path fill="none" stroke="black" d="M2689.88,-4058.05C2689.74,-3985.17 2689.2,-3714.2 2688.94,-3584.51" style=""/>
+</g>
+<!-- NSIC&#45;&#45;SGS9 -->
+<g id="edge136" class="edge" data-name="NSIC--SGS9">
+
+<path fill="none" stroke="black" d="M3216.23,-3816.67C3125.79,-3764.85 2867.72,-3616.97 2749.4,-3549.18" style=""/>
+</g>
+<!-- NSIC&#45;&#45;MSA13 -->
+<g id="edge137" class="edge" data-name="NSIC--MSA13">
+
+<path fill="none" stroke="black" d="M3272.38,-3853.49C3323.56,-3892.72 3446.2,-3986.7 3539.38,-4058.11" style=""/>
+</g>
+<!-- NS -->
+<g id="node75" class="node" pointer-events="visible" data-name="NS">
+
+<polygon fill="white" stroke="black" points="4651.51,-7565.68 4431.84,-7565.68 4431.84,-7529.68 4651.51,-7529.68 4651.51,-7565.68" style=""/>
+<text text-anchor="middle" x="4541.68" y="-7541.68" font-family="Times,serif" font-size="20.00" style="">NS (Number of Services)</text>
+</g>
+<!-- NS&#45;&#45;MSA14 -->
+<g id="edge145" class="edge" data-name="NS--MSA14">
+
+<path fill="none" stroke="black" d="M4545.63,-7529.22C4574.21,-7395.6 4750.24,-6572.59 4820.58,-6243.75" style=""/>
+</g>
+<!-- RCS -->
+<g id="node76" class="node" pointer-events="visible" data-name="RCS">
+
+<polygon fill="#d5f5e3" stroke="black" points="5137.07,-2859.41 4832.37,-2859.41 4832.37,-2823.41 5137.07,-2823.41 5137.07,-2859.41" style=""/>
+<text text-anchor="middle" x="4984.72" y="-2835.41" font-family="Times,serif" font-size="20.00" style="">RCS (Relative Coupling of Service)</text>
+</g>
+<!-- RCS&#45;&#45;SF21 -->
+<g id="edge146" class="edge" data-name="RCS--SF21">
+
+<path fill="none" stroke="black" d="M4892.16,-2822.94C4808.34,-2806.22 4684.45,-2781.51 4593.8,-2763.43" style=""/>
+</g>
+<!-- RCS&#45;&#45;CBO -->
+<g id="edge148" class="edge" data-name="RCS--CBO">
+
+<path fill="none" stroke="black" d="M4980.84,-2859.8C4952.83,-2992.66 4781.77,-3804.16 4753.89,-3936.4" style=""/>
+</g>
+<!-- RCS&#45;&#45;AffCoupl -->
+<g id="edge149" class="edge" data-name="RCS--AffCoupl">
+
+<path fill="none" stroke="black" d="M5137.32,-2848.07C5273.69,-2854.02 5468.29,-2862.51 5577.2,-2867.26" style=""/>
+</g>
+<!-- RCS&#45;&#45;TightCoupl -->
+<g id="edge147" class="edge" data-name="RCS--TightCoupl">
+
+<path fill="none" stroke="black" d="M4958.54,-2859.76C4863.81,-2926.18 4539.46,-3153.59 4444.65,-3220.07" style=""/>
+</g>
+<!-- RIS -->
+<g id="node77" class="node" pointer-events="visible" data-name="RIS">
+
+<polygon fill="#d5f5e3" stroke="black" points="3594.31,-2810.87 3279.76,-2810.87 3279.76,-2774.87 3594.31,-2774.87 3594.31,-2810.87" style=""/>
+<text text-anchor="middle" x="3437.04" y="-2786.87" font-family="Times,serif" font-size="20.00" style="">RIS (Relative Importance of Service)</text>
+</g>
+<!-- RIS&#45;&#45;SGS9 -->
+<g id="edge150" class="edge" data-name="RIS--SGS9">
+
+<path fill="none" stroke="black" d="M3418.17,-2811.07C3322.3,-2903.52 2887.99,-3322.36 2739.09,-3465.97" style=""/>
+</g>
+<!-- RIS&#45;&#45;MSA13 -->
+<g id="edge151" class="edge" data-name="RIS--MSA13">
+
+<path fill="none" stroke="black" d="M3439.68,-2811.1C3453.44,-2905.82 3518.65,-3351.46 3579.33,-3714.91 3595.35,-3810.88 3614.68,-3918.55 3630.07,-4002.57" style=""/>
+</g>
+<!-- SCF -->
+<g id="node78" class="node" pointer-events="visible" data-name="SCF">
+
+<polygon fill="#d5f5e3" stroke="black" points="5301.78,-3358.55 5035.93,-3358.55 5035.93,-3322.55 5301.78,-3322.55 5301.78,-3358.55" style=""/>
+<text text-anchor="middle" x="5168.86" y="-3334.55" font-family="Times,serif" font-size="20.00" style="">SCF (Service Coupling Factor)</text>
+</g>
+<!-- SCF&#45;&#45;SF21 -->
+<g id="edge152" class="edge" data-name="SCF--SF21">
+
+<path fill="none" stroke="black" d="M5147.77,-3322.25C5061.07,-3247.03 4729.07,-2958.94 4566.97,-2818.29" style=""/>
+</g>
+<!-- SCF&#45;&#45;CBO -->
+<g id="edge154" class="edge" data-name="SCF--CBO">
+
+<path fill="none" stroke="black" d="M5156.32,-3358.93C5094.67,-3449.33 4824.08,-3846.07 4762.54,-3936.3" style=""/>
+</g>
+<!-- SCF&#45;&#45;AffCoupl -->
+<g id="edge155" class="edge" data-name="SCF--AffCoupl">
+
+<path fill="none" stroke="black" d="M5188.07,-3322.14C5266.49,-3247 5561.81,-2964.02 5639.99,-2889.12" style=""/>
+</g>
+<!-- SCF&#45;&#45;TightCoupl -->
+<g id="edge153" class="edge" data-name="SCF--TightCoupl">
+
+<path fill="none" stroke="black" d="M5035.56,-3322.42C4885.2,-3301.96 4644.48,-3269.21 4512.52,-3251.26" style=""/>
+</g>
+<!-- WSIC -->
+<g id="node79" class="node" pointer-events="visible" data-name="WSIC">
+
+<polygon fill="white" stroke="black" points="3331.32,-7482.02 2974.37,-7482.02 2974.37,-7446.02 3331.32,-7446.02 3331.32,-7482.02" style=""/>
+<text text-anchor="middle" x="3152.85" y="-7458.02" font-family="Times,serif" font-size="20.00" style="">WSIC (Weighted Service Interface Count)</text>
+</g>
+<!-- WSIC&#45;&#45;SGS3 -->
+<g id="edge157" class="edge" data-name="WSIC--SGS3">
+
+<path fill="none" stroke="black" d="M3158.42,-7445.62C3200.98,-7305.08 3475.54,-6398.39 3572.57,-6077.95" style=""/>
+</g>
+<!-- WSIC&#45;&#45;MSA14 -->
+<g id="edge156" class="edge" data-name="WSIC--MSA14">
+
+<path fill="none" stroke="black" d="M3175.87,-7445.62C3344.95,-7310.51 4397.92,-6469.12 4741.37,-6194.68" style=""/>
+</g>
+<!-- IAUM -->
+<g id="node81" class="node" pointer-events="visible" data-name="IAUM">
+
+<polygon fill="#f9d5ec" stroke="black" points="5756.7,-6052.72 5383.31,-6052.72 5383.31,-6016.72 5756.7,-6016.72 5756.7,-6052.72" style=""/>
+<text text-anchor="middle" x="5570" y="-6028.72" font-family="Times,serif" font-size="20.00" style="">IAUM (Inverse of Avg Num Used Message)</text>
+</g>
+<!-- IAUM&#45;&#45;SF15 -->
+<g id="edge159" class="edge" data-name="IAUM--SF15">
+
+<path fill="none" stroke="black" d="M5586.31,-6016.26C5678.47,-5911.99 6143.66,-5386.47 6530.55,-4963.39 7114.06,-4325.31 7830.47,-3565.42 8055.88,-3326.88" style=""/>
+</g>
+<!-- IAUM&#45;&#45;MSA14 -->
+<g id="edge160" class="edge" data-name="IAUM--MSA14">
+
+<path fill="none" stroke="black" d="M5389.14,-6053.17C5264.61,-6065.88 5101.7,-6082.5 4987.6,-6094.14" style=""/>
+</g>
+<!-- RFO -->
+<g id="node82" class="node" pointer-events="visible" data-name="RFO">
+
+<polygon fill="white" stroke="black" points="6766.82,-3732.48 6503.47,-3732.48 6503.47,-3696.48 6766.82,-3696.48 6766.82,-3732.48" style=""/>
+<text text-anchor="middle" x="6635.14" y="-3708.48" font-family="Times,serif" font-size="20.00" style="">RFO (Response for Operation)</text>
+</g>
+<!-- RFO&#45;&#45;SGS7 -->
+<g id="edge161" class="edge" data-name="RFO--SGS7">
+
+<path fill="none" stroke="black" d="M6503.15,-3731.23C6226.62,-3770.43 5571.87,-3884.91 5086.38,-4141.47 4989.71,-4192.55 4885.7,-4263.59 4818.42,-4311.89" style=""/>
+</g>
+<!-- TRS -->
+<g id="node83" class="node" pointer-events="visible" data-name="TRS">
+
+<polygon fill="white" stroke="black" points="720.16,-4067.77 431.85,-4067.77 431.85,-4031.77 720.16,-4031.77 720.16,-4067.77" style=""/>
+<text text-anchor="middle" x="576" y="-4043.77" font-family="Times,serif" font-size="20.00" style="">TRS (Total Response for Service)</text>
+</g>
+<!-- TRS&#45;&#45;SGS9 -->
+<g id="edge162" class="edge" data-name="TRS--SGS9">
+
+<path fill="none" stroke="black" d="M633.3,-4031.34C798.17,-3978.69 1288.46,-3824.7 1702.11,-3721.18 2044.02,-3635.62 2458.56,-3556.75 2619.9,-3526.99" style=""/>
+</g>
+<!-- TRS&#45;&#45;MSA13 -->
+<g id="edge163" class="edge" data-name="TRS--MSA13">
+
+<path fill="none" stroke="black" d="M720.48,-4054.39C1236.69,-4070.92 2986.89,-4126.93 3508.98,-4143.65" style=""/>
+</g>
+<!-- MAIDS -->
+<g id="node84" class="node" pointer-events="visible" data-name="MAIDS">
+
+<polygon fill="#d5f5e3" stroke="black" points="3497.63,-3376.27 3075.68,-3376.27 3075.68,-3340.27 3497.63,-3340.27 3497.63,-3376.27" style=""/>
+<text text-anchor="middle" x="3286.66" y="-3352.27" font-family="Times,serif" font-size="20.00" style="">MAIDS (Mean Absolute Importance/Dependence)</text>
+</g>
+<!-- MAIDS&#45;&#45;SF21 -->
+<g id="edge166" class="edge" data-name="MAIDS--SF21">
+
+<path fill="none" stroke="black" d="M3321.95,-3339.93C3478.81,-3258.47 4116.08,-2927.49 4370.86,-2795.16" style=""/>
+</g>
+<!-- MAIDS&#45;&#45;SGS9 -->
+<g id="edge164" class="edge" data-name="MAIDS--SGS9">
+
+<path fill="none" stroke="black" d="M3216.02,-3376.72C3100,-3407.03 2870.58,-3466.97 2756.5,-3496.77" style=""/>
+</g>
+<!-- MAIDS&#45;&#45;MSA13 -->
+<g id="edge165" class="edge" data-name="MAIDS--MSA13">
+
+<path fill="none" stroke="black" d="M3295.27,-3376.63C3334.88,-3461.09 3501.52,-3816.44 3594.24,-4014.17" style=""/>
+</g>
+<!-- MACS -->
+<g id="node85" class="node" pointer-events="visible" data-name="MACS">
+
+<polygon fill="#d5f5e3" stroke="black" points="4732.69,-679.63 4439.26,-679.63 4439.26,-643.63 4732.69,-643.63 4732.69,-679.63" style=""/>
+<text text-anchor="middle" x="4585.97" y="-655.63" font-family="Times,serif" font-size="20.00" style="">MACS (Mean Absolute Coupling)</text>
+</g>
+<!-- MACS&#45;&#45;SF21 -->
+<g id="edge167" class="edge" data-name="MACS--SF21">
+
+<path fill="none" stroke="black" d="M4585.02,-679.91C4575.92,-853.12 4504.82,-2207.61 4483.13,-2620.83" style=""/>
+</g>
+<!-- DRDS -->
+<g id="node86" class="node" pointer-events="visible" data-name="DRDS">
+
+<polygon fill="#d5f5e3" stroke="black" points="3351.95,-694.55 2928.79,-694.55 2928.79,-658.55 3351.95,-658.55 3351.95,-694.55" style=""/>
+<text text-anchor="middle" x="3140.37" y="-670.55" font-family="Times,serif" font-size="20.00" style="">DRDS (Dynamic Relative Dependence of Service)</text>
+</g>
+<!-- DRDS&#45;&#45;SF21 -->
+<g id="edge168" class="edge" data-name="DRDS--SF21">
+
+<path fill="none" stroke="black" d="M3152.33,-695.02C3266.29,-870.98 4161.59,-2253.31 4411.99,-2639.94" style=""/>
+</g>
+<!-- DRIS -->
+<g id="node87" class="node" pointer-events="visible" data-name="DRIS">
+
+<polygon fill="#d5f5e3" stroke="black" points="1991.31,-5060.85 1584.24,-5060.85 1584.24,-5024.85 1991.31,-5024.85 1991.31,-5060.85" style=""/>
+<text text-anchor="middle" x="1787.78" y="-5036.85" font-family="Times,serif" font-size="20.00" style="">DRIS (Dynamic Relative Importance of Service)</text>
+</g>
+<!-- DRIS&#45;&#45;SGS9 -->
+<g id="edge169" class="edge" data-name="DRIS--SGS9">
+
+<path fill="none" stroke="black" d="M1798.52,-5024.62C1887.18,-4874.24 2498.27,-3837.66 2653.17,-3574.9" style=""/>
+</g>
+<!-- DRIS&#45;&#45;MSA13 -->
+<g id="edge170" class="edge" data-name="DRIS--MSA13">
+
+<path fill="none" stroke="black" d="M1824.46,-5024.56C1947.49,-4963.45 2357.17,-4761.81 2703.65,-4612.5 3050.29,-4463.12 3175.19,-4503.81 3494.05,-4301.83 3515.07,-4288.51 3535.78,-4272.26 3555.01,-4255.38" style=""/>
+</g>
+<!-- DRDSS -->
+<g id="node88" class="node" pointer-events="visible" data-name="DRDSS">
+
+<polygon fill="#d5f5e3" stroke="black" points="5604.41,-711.84 5086.1,-711.84 5086.1,-675.84 5604.41,-675.84 5604.41,-711.84" style=""/>
+<text text-anchor="middle" x="5345.26" y="-687.84" font-family="Times,serif" font-size="20.00" style="">DRDSS (Dynamic Relative Dependence of Service in System)</text>
+</g>
+<!-- DRDSS&#45;&#45;SF21 -->
+<g id="edge171" class="edge" data-name="DRDSS--SF21">
+
+<path fill="none" stroke="black" d="M5335.67,-711.98C5275.23,-826.71 4942.66,-1464.01 4723.82,-2006.5 4637.09,-2221.48 4555.12,-2479.83 4510.87,-2625.5" style=""/>
+</g>
+<!-- DRISS -->
+<g id="node89" class="node" pointer-events="visible" data-name="DRISS">
+
+<polygon fill="#d5f5e3" stroke="black" points="3490.9,-4298.63 2987.69,-4298.63 2987.69,-4262.63 3490.9,-4262.63 3490.9,-4298.63" style=""/>
+<text text-anchor="middle" x="3239.29" y="-4274.63" font-family="Times,serif" font-size="20.00" style="">DRISS (Dynamic Relative Importance of Service in System)</text>
+</g>
+<!-- DRISS&#45;&#45;SGS9 -->
+<g id="edge172" class="edge" data-name="DRISS--SGS9">
+
+<path fill="none" stroke="black" d="M3226.23,-4262.45C3158.17,-4167.72 2843.04,-3729.12 2729.61,-3571.26" style=""/>
+</g>
+<!-- DRISS&#45;&#45;MSA13 -->
+<g id="edge173" class="edge" data-name="DRISS--MSA13">
+
+<path fill="none" stroke="black" d="M3297.4,-4262.24C3353.69,-4244.43 3441.26,-4216.72 3515.91,-4193.1" style=""/>
+</g>
+</g>
+</svg>
